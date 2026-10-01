@@ -48,3 +48,24 @@ Fixed now, before any value is extracted:
   - The extract's SHA-256 on the server equals the one in this repository.
   - The script's per-year count was wrong, because the date field also holds a time, and it is not used. Years are counted by `tools/build.py`.
   - `Delprøve` (sub-sample) runs from 1 to 16. Several samples at one station on one date are averaged, as METHOD.md says.
+
+## 2026-10-01, evening: catchments and a soil check (changed before any value is read)
+
+**Why the catchment source changes.**
+- METHOD.md said catchments are drawn from Klimadatastyrelsen's HIP catchments. With a token, HIP turned out to offer them only as map images (WMS), and only for whole river systems: 144, 455 and 565 km² at three test stations whose own catchments are 17, 179 and 47 km². They cannot be traced upstream from a station.
+- DCE's ID15 catchments (`Vandprojekter:ID15oplande`, 3,137 polygons) are open, but they do not say which flows into which.
+
+**New catchment source, in this order:**
+1. **DCE's own station catchments**, if DCE provides them under terms that allow publication. Kvantix has asked.
+2. Otherwise, **catchments drawn from the national elevation model**:
+   - Source: Danmarks Højdemodel, terrain, through Dataforsyningen's WCS `dhm_wcs_DAF`, resampled to 25 m.
+   - Procedure: depressions filled, D8 flow directions. The station is moved to the cell with the largest upstream area within 200 m of its position, and its catchment is every cell that drains to that cell.
+   - The area check in METHOD.md (within ±10 % of the area VanDa states) is unchanged. It decides which drawn catchments are used.
+   - The source used for each station is listed in the results.
+
+**New robustness check R8, soil:**
+- **Source.** Landbrugsstyrelsen's Jordbundskort 2024, CC0.
+- **Clay share `L`.** For each catchment, the share of area with JB numbers 5–9 (clay soils).
+- **R8 regression.** `C_ps = b0 + b1·L + s·A`, with the same resampling.
+- **Reported.** Background on sand (`L = 0`) and on clay (`L = 1`).
+- **Role.** Like the other checks, R8 is reported next to the primary result and never replaces it.
