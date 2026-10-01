@@ -21,6 +21,30 @@
     "one_line_per_record": true,
     "extract_sha256_on_server": "595d5b8db540212cd34e7a53bd9380ace3d9cbd3051dbde19ed5215ab3439bd8"
    }
+  },
+  "vandah_stations.json": {
+   "sha256": "9801c71652aead98f722eab7c9bc570096c5efb5d2c29198a90e55739193f726",
+   "bytes": 4427938,
+   "what": "VanDa hydrometry API, GET /api/stations?format=json (open)",
+   "made_utc": "2026-10-01T19:04:28Z"
+  },
+  "catchments/catchments.geojson": {
+   "sha256": "d0fe09ccd3ec4dc5a7056b134310d47f822a61ebfe0c3ab0a3a29f63f2864afc",
+   "bytes": 5931281,
+   "what": "Catchments drawn by tools/catchments.py, EPSG:25832",
+   "made_utc": "2026-10-01T19:04:28Z"
+  },
+  "catchments/summary.csv": {
+   "sha256": "379752d547678c5a9f15ef18341244ece3e0c47ed59bec1deb11c5cc2f0ae4b0",
+   "bytes": 31579,
+   "what": "One row per candidate flow station: stated and drawn area, accepted or not",
+   "made_utc": "2026-10-01T19:04:28Z"
+  },
+  "catchments/tiles.json": {
+   "sha256": "e5df081c5b405be78eb27aacb2b48b3222552a21fbee269ddd8fd342a539c475",
+   "bytes": 12181,
+   "what": "Elevation tiles used, with the request (no token) and SHA-256 of each",
+   "made_utc": "2026-10-01T19:04:28Z"
   }
  }
 }

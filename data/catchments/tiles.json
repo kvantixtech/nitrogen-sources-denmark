@@ -1,0 +1,163 @@
+{
+ "resolution_m": 25.0,
+ "coverage": "dhm_terraen",
+ "service": "Dataforsyningen dhm_wcs_DAF (token not stored)",
+ "tiles": {
+  "0_1": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=441000,6303000,491000,6353000&width=2000&height=2000&format=GTiff",
+   "sha256": "84aae74abd11cbd5ccee5af8c9f97aefadf43b824998f502e9371ff5e069b65a"
+  },
+  "0_2": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=441000,6253000,491000,6303000&width=2000&height=2000&format=GTiff",
+   "sha256": "a4e6a1188efbc78f783aabc88351ce3fc03ccd0b10736ebe05cffb0c566c1d8e"
+  },
+  "0_3": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=441000,6203000,491000,6253000&width=2000&height=2000&format=GTiff",
+   "sha256": "e29f082b64148ec112e6fb752403cf9491c2d599fe8b372356ec182a2dce9d9a"
+  },
+  "0_4": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=441000,6153000,491000,6203000&width=2000&height=2000&format=GTiff",
+   "sha256": "feb2ea8574323fcf4a642f69bdd4b0047c85290f1a9e9ca43c464960b8299b9f"
+  },
+  "0_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=441000,6103000,491000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "faa795bb44645654c29232ddbdf6a35d56a3ab3e074c62abcd196504fff5458d"
+  },
+  "0_6": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=441000,6053000,491000,6103000&width=2000&height=2000&format=GTiff",
+   "sha256": "ffbb678003470e6e97ec709291f615dfef73ff212b44925771cc0b2ab8794cbf"
+  },
+  "1_0": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6353000,541000,6403000&width=2000&height=2000&format=GTiff",
+   "sha256": "f1a82b3ea70c9d33bdaabf2358e2a28e3402d77128739079609cd490ee1601a0"
+  },
+  "1_1": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6303000,541000,6353000&width=2000&height=2000&format=GTiff",
+   "sha256": "c8b3e7708712700c9cbf5b629adb11a949843f3a2de15ebc4275d08136250874"
+  },
+  "1_2": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6253000,541000,6303000&width=2000&height=2000&format=GTiff",
+   "sha256": "5cfd43505df0d8ed04d10309c07a7eee867e76d5abd8f20420301a2656adfaf8"
+  },
+  "1_3": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6203000,541000,6253000&width=2000&height=2000&format=GTiff",
+   "sha256": "befb8e61f20d8c867e580d606a08992180c721966384839692a16bb5db294f06"
+  },
+  "1_4": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6153000,541000,6203000&width=2000&height=2000&format=GTiff",
+   "sha256": "0ec41435f965263ddd23234e925bb9f3df7735ae58b96e350cfb6c5799861254"
+  },
+  "1_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6103000,541000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "6436c11ce2e466a8d0df996dd00d8d3aec6fc111f78e0e4a9950f8ec6b3ecc8d"
+  },
+  "1_6": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=491000,6053000,541000,6103000&width=2000&height=2000&format=GTiff",
+   "sha256": "560bc536164ba3f7219630ad1eea384a34e2e00861d99b26bf5bb29bdcf63597"
+  },
+  "2_0": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6353000,591000,6403000&width=2000&height=2000&format=GTiff",
+   "sha256": "84f91820f684dcb875dce5d28efaff6ae5f04621ae1e40dc5b2153e3b93c6dad"
+  },
+  "2_1": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6303000,591000,6353000&width=2000&height=2000&format=GTiff",
+   "sha256": "9f0b0e1b58b5bc5ebeb6afee9d51b9890659e9acd7ab5018b36dc4f4e5dc6804"
+  },
+  "2_2": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6253000,591000,6303000&width=2000&height=2000&format=GTiff",
+   "sha256": "d0470b1b7d2cc5fce910e1ba4b219219b79b22079384921db0e71fdaf82e01ba"
+  },
+  "2_3": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6203000,591000,6253000&width=2000&height=2000&format=GTiff",
+   "sha256": "d9b140373b7a9e28494c036cdc6004ba0ecd8a8e9fa69c4f66922729918ff195"
+  },
+  "2_4": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6153000,591000,6203000&width=2000&height=2000&format=GTiff",
+   "sha256": "47cb53c589beea116df7a0e906582d09da6c8361352f76cecf11e8808c87d6b5"
+  },
+  "2_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6103000,591000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "c45b64252b93806c6a3982668d74dedaf1b8c7828819c81af63e9e22b2fe6065"
+  },
+  "2_6": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=541000,6053000,591000,6103000&width=2000&height=2000&format=GTiff",
+   "sha256": "dbb6d8e01897133422f901e52a5270328e43351ca1f6a54f333082ef8c33cc08"
+  },
+  "3_0": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6353000,641000,6403000&width=2000&height=2000&format=GTiff",
+   "sha256": "0295d9a110db1bfc2313d87c7ca40a30fbfbf54f44c427f55c1793030511a0ae"
+  },
+  "3_1": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6303000,641000,6353000&width=2000&height=2000&format=GTiff",
+   "sha256": "79a8426e5a98ba37e94d89aea6877b1fd2c597b7e56169d422f1bc5ce4baf63e"
+  },
+  "3_2": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6253000,641000,6303000&width=2000&height=2000&format=GTiff",
+   "sha256": "af6d9c79ce6a165d2fe77d3a02f48941bc6552858553d0d82a18a4c0514ec985"
+  },
+  "3_3": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6203000,641000,6253000&width=2000&height=2000&format=GTiff",
+   "sha256": "f29ed2d57729d18f5c7757d6a30a26fc44d6d3fd00d7e0085cb32bb5e09f6437"
+  },
+  "3_4": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6153000,641000,6203000&width=2000&height=2000&format=GTiff",
+   "sha256": "5101e8f15069a6922514ec2cffaca43fe46b9b69bf805379402987abb954e229"
+  },
+  "3_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6103000,641000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "0ce05d4be7ef34d20d7e0e855f888697f0b6090dcafc7212be1943f900a85dad"
+  },
+  "3_6": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6053000,641000,6103000&width=2000&height=2000&format=GTiff",
+   "sha256": "3576022fb9c53b0e31a2970b48fe5614ed19648a4dc6f079a9877bd8d95de09d"
+  },
+  "3_7": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=591000,6003000,641000,6053000&width=2000&height=2000&format=GTiff",
+   "sha256": "7095e934b4ffcdf049ca3ba7cd35ef3b1ddd1c5c9c11a1d11b748072a8ea8576"
+  },
+  "4_3": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=641000,6203000,691000,6253000&width=2000&height=2000&format=GTiff",
+   "sha256": "baa47bff45ee6cda84e27c7b7a865419183e0bacdd81435b921dfdcba533c01f"
+  },
+  "4_4": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=641000,6153000,691000,6203000&width=2000&height=2000&format=GTiff",
+   "sha256": "55063a95b301edbc5bc7de7713dde07955e2b4155db5676243fa9165d11178da"
+  },
+  "4_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=641000,6103000,691000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "fb91d81903a7bb8ea204b87d24d22c09b67f4f131a39b2bd5b11694c54b10cc9"
+  },
+  "4_6": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=641000,6053000,691000,6103000&width=2000&height=2000&format=GTiff",
+   "sha256": "256a5f8580ad553e293a70f5e6578868ceb65b310ed7bea06b8577515a2c943c"
+  },
+  "4_7": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=641000,6003000,691000,6053000&width=2000&height=2000&format=GTiff",
+   "sha256": "3798252124820711bcbceaf609e28884ca97042bb000301b121ab0f20d6d6ee2"
+  },
+  "5_3": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=691000,6203000,741000,6253000&width=2000&height=2000&format=GTiff",
+   "sha256": "8cd6c1ed76655a89479382059d635a4c6205e72aca8045302ee9620524e0b815"
+  },
+  "5_4": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=691000,6153000,741000,6203000&width=2000&height=2000&format=GTiff",
+   "sha256": "768a122c91ded4747db2a12a8f9ff26de4fd7cadbfa6245ba92aa92141206c66"
+  },
+  "5_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=691000,6103000,741000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "dfa6d26d2a622f4d2589b176d5e9e30186ec093fe5f6ae6ca525feeac6f27029"
+  },
+  "5_6": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=691000,6053000,741000,6103000&width=2000&height=2000&format=GTiff",
+   "sha256": "fced7ae5613cd210d866af044306ac33f82c3ce766d51dd68c3679fa34f1b2a2"
+  },
+  "5_7": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=691000,6003000,741000,6053000&width=2000&height=2000&format=GTiff",
+   "sha256": "c93b3d84d14d8498d768d164bb13934d4651a042006a3daf22ff41e05ddfadb4"
+  },
+  "8_5": {
+   "request": "https://api.dataforsyningen.dk/dhm_wcs_DAF?service=WCS&version=1.0.0&request=GetCoverage&coverage=dhm_terraen&crs=EPSG:25832&bbox=841000,6103000,891000,6153000&width=2000&height=2000&format=GTiff",
+   "sha256": "8e3ca06f6db21e4d1c844dc9f6b41d30c15bb5d45ebbf304bffd62860b24a653"
+  }
+ }
+}
