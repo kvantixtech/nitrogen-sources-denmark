@@ -1,0 +1,31 @@
+name: landuse
+# Farmland share, clay share and point sources per accepted catchment (tools/landuse.py). Open data, no secrets.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: ["tools/landuse.py", ".github/workflows/landuse.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: landuse
+  cancel-in-progress: false
+jobs:
+  landuse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "shapely==2.1.2"
+      - run: |
+          mkdir -p data/landuse
+          set -o pipefail
+          python3 tools/landuse.py 2>&1 | tee data/landuse/run.log
+      - if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ && git commit -qm "Land use: farmland and clay share, point sources per catchment (tools/landuse.py), with run log" && git pull -q --rebase && git push -q

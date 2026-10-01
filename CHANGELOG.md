@@ -79,3 +79,29 @@ Fixed now, before any value is extracted:
 - The chemistry station positions are the coordinates in `data/raw/vandkemi_tn.csv.xz`. These are the stations that actually have total-nitrogen rows. The open WFS layer would add stations with no nitrogen data, which could never be paired.
 - Only coordinates and station numbers are read, no values. From the station list of 2026-10-01 this gives 197 candidates.
 - Flow years, the period and the pairing rules in METHOD.md come later, in `tools/build.py`.
+
+## 2026-10-01, night: the period (from flow data only, before any nitrogen value is read)
+
+`tools/flow.py` downloaded the discharge series for all 197 candidates, 2010–2025: 3,152 downloads, no errors. It counted valid flow years as METHOD.md defines them.
+
+Share of candidates with a valid flow year:
+
+| Year | Share |
+|---|---|
+| 2016 | 52.3 % |
+| 2017 | 73.6 % |
+| 2018 | 74.6 % |
+| 2019 | 75.6 % |
+| 2020 | 75.6 % |
+| 2021 | 75.6 % |
+| 2022 | 74.6 % |
+| 2023 | 72.6 % |
+| 2024 | 10.2 % |
+| 2025 | 12.2 % |
+
+The latest completed year with at least 75 % is 2021. Most stations have no published flow for 2024 and 2025 yet.
+
+**Period fixed: 2017–2021.**
+
+- **Field blocks.** The field-block year is therefore 2021 (`Markblokke:Markblokke_2021`).
+- **Point sources.** They remain the 2024 layer, three years after the period ends. METHOD.md lists this as a limitation, and the results will state the gap.
