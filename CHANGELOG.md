@@ -42,3 +42,9 @@ Fixed now, before any value is extracted:
 
 - **Rule added before any value is read.** Leading and trailing spaces, including no-break spaces, are stripped. An empty attribute counts as `=`. `<=` is treated like `<`, so the value is half the number given.
 - **Rows that pass the filters fixed above:** 316,446, counted on metadata only.
+- **Cut confirmed on the server.**
+  - `tools/extract_tn.py` read a source whose SHA-256 is the same as in the inventory.
+  - The source has 2,667,507 lines and 2,667,507 CSV records (header included), so every record is one line and the byte-for-byte cut is safe.
+  - The extract's SHA-256 on the server equals the one in this repository.
+  - The script's per-year count was wrong, because the date field also holds a time, and it is not used. Years are counted by `tools/build.py`.
+  - `Delprøve` (sub-sample) runs from 1 to 16. Several samples at one station on one date are averaged, as METHOD.md says.
