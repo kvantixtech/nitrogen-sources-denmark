@@ -1,0 +1,103 @@
+{
+ "run_utc": "2026-10-01T19:10:46Z",
+ "tries": {
+  "19000467_2020_json": {
+   "bytes": 8061404,
+   "type": "application/json; charset=utf-8",
+   "seconds": 2.7,
+   "points": 34999,
+   "first": "2021-01-01T00:00:00.00Z",
+   "last": "2020-01-01T00:00:00.00Z",
+   "days": 367
+  },
+  "19000467_2020_csv": {
+   "bytes": 2881651,
+   "type": "text/csv; charset=utf-8",
+   "seconds": 2.1,
+   "lines": 35000,
+   "head": [
+    "\ufeff\ufeffStationId;OperatorStationId;MeasurementPointNumber;ParameterSc;Parameter;ExaminationTypeSc;ExaminationType;MeasurementDateTime;DepthM;Result;UnitSc;Unit",
+    "19000467;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2021-01-01T00:00:00.00Z;;122,2;55;l/s",
+    "19000467;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2020-12-31T23:45:00.00Z;;123,5;55;l/s"
+   ]
+  },
+  "21006853_2023_json": {
+   "bytes": 12230516,
+   "type": "application/json; charset=utf-8",
+   "seconds": 3.0,
+   "points": 52557,
+   "first": "2023-12-31T23:50:00.00Z",
+   "last": "2023-01-01T00:00:00.00Z",
+   "days": 365
+  },
+  "21006853_2023_csv": {
+   "bytes": 4452179,
+   "type": "text/csv; charset=utf-8",
+   "seconds": 2.4,
+   "lines": 52558,
+   "head": [
+    "\ufeff\ufeffStationId;OperatorStationId;MeasurementPointNumber;ParameterSc;Parameter;ExaminationTypeSc;ExaminationType;MeasurementDateTime;DepthM;Result;UnitSc;Unit",
+    "21006853;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2023-12-31T23:50:00.00Z;;61673,3;55;l/s",
+    "21006853;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2023-12-31T23:40:00.00Z;;61677,1;55;l/s"
+   ]
+  },
+  "42001223_2022_json": {
+   "bytes": 10295246,
+   "type": "application/json; charset=utf-8",
+   "seconds": 2.4,
+   "points": 44612,
+   "first": "2023-01-01T00:00:00.00Z",
+   "last": "2022-01-01T00:00:00.00Z",
+   "days": 366
+  },
+  "42001223_2022_csv": {
+   "bytes": 3692769,
+   "type": "text/csv; charset=utf-8",
+   "seconds": 2.4,
+   "lines": 44613,
+   "head": [
+    "\ufeff\ufeffStationId;OperatorStationId;MeasurementPointNumber;ParameterSc;Parameter;ExaminationTypeSc;ExaminationType;MeasurementDateTime;DepthM;Result;UnitSc;Unit",
+    "42001223;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2023-01-01T00:00:00.00Z;;1213,9;55;l/s",
+    "42001223;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2022-12-31T23:50:00.00Z;;1213,4;55;l/s"
+   ]
+  },
+  "21006853_2024_json": {
+   "bytes": 2,
+   "type": "application/json; charset=utf-8",
+   "seconds": 0.6,
+   "points": 0,
+   "first": null,
+   "last": null,
+   "days": 0
+  },
+  "21006853_2024_csv": {
+   "bytes": 6,
+   "type": "text/csv; charset=utf-8",
+   "seconds": 0.6,
+   "lines": 1,
+   "head": [
+    "\ufeff\ufeff"
+   ]
+  },
+  "19000467_2012_json": {
+   "bytes": 8078968,
+   "type": "application/json; charset=utf-8",
+   "seconds": 2.4,
+   "points": 35136,
+   "first": "2013-01-01T00:00:00.00Z",
+   "last": "2012-01-01T00:00:00.00Z",
+   "days": 367
+  },
+  "19000467_2012_csv": {
+   "bytes": 2878939,
+   "type": "text/csv; charset=utf-8",
+   "seconds": 2.0,
+   "lines": 35137,
+   "head": [
+    "\ufeff\ufeffStationId;OperatorStationId;MeasurementPointNumber;ParameterSc;Parameter;ExaminationTypeSc;ExaminationType;MeasurementDateTime;DepthM;Result;UnitSc;Unit",
+    "19000467;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2013-01-01T00:00:00.00Z;;176,7;55;l/s",
+    "19000467;;1;1155;Vandf\u00f8ring;27;Vandf\u00f8ring;2012-12-31T23:45:00.00Z;;174,6;55;l/s"
+   ]
+  }
+ }
+}
