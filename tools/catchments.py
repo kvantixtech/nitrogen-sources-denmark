@@ -99,7 +99,7 @@ def tile(i, j):
     if not os.path.exists(path):
         b = http(req + "&token=" + TOKEN)
         if not b[:4] in (b"II*\x00", b"MM\x00*"):
-            raise RuntimeError(f"tile {i},{j}: not a GeoTIFF: {b[:200]!r}")
+            raise RuntimeError(f"tile {i},{j}: not a GeoTIFF: {b[:200]!r}".replace(TOKEN, "<TOKEN>"))
         open(path, "wb").write(b)
     with rasterio.open(path) as src:
         a = src.read(1).astype("float32")
@@ -161,8 +161,8 @@ def delineate(x, y, stated):
         half = min(half * 1.6, 120000.0)
     polys = [shape(g) for g, v in features.shapes(mask.astype("uint8"), mask=mask, transform=aff) if v == 1]
     geom = unary_union(polys).simplify(RES / 2, preserve_topology=True)
-    return {"drawn_km2": round(mask.sum() * RES * RES / 1e6, 3), "snap_m": round(math.hypot(px - x, py - y)),
-            "outlet_x": round(px, 1), "outlet_y": round(py, 1), "attempts": attempt, "window_km": round(2 * half / 1000, 1),
+    return {"drawn_km2": round(float(mask.sum()) * RES * RES / 1e6, 3), "snap_m": int(round(math.hypot(px - x, py - y))),
+            "outlet_x": round(float(px), 1), "outlet_y": round(float(py), 1), "attempts": attempt, "window_km": round(2 * half / 1000, 1),
             "touches_window_edge": edge}, geom
 
 
@@ -186,10 +186,10 @@ def main():
         t0 = time.time()
         try:
             res, geom = delineate(c["x"], c["y"], c["stated_km2"])
-            ratio = res["drawn_km2"] / c["stated_km2"]
-            res.update(ratio=round(ratio, 4), accepted=abs(ratio - 1) <= TOL and not res["touches_window_edge"], error="")
+            ratio = float(res["drawn_km2"]) / float(c["stated_km2"])
+            res.update(ratio=round(ratio, 4), accepted=bool(abs(ratio - 1) <= TOL and not res["touches_window_edge"]), error="")
         except Exception as e:
-            res, geom = {"drawn_km2": None, "ratio": None, "accepted": False, "error": str(e)[:200]}, None
+            res, geom = {"drawn_km2": None, "ratio": None, "accepted": False, "error": str(e).replace(TOKEN, "<TOKEN>")[:200]}, None
         row = {k: c[k] for k in ("stationId", "name", "x", "y", "stated_km2", "area_source", "chem_nearby")}
         row.update(res); rows.append(row)
         if geom is not None:

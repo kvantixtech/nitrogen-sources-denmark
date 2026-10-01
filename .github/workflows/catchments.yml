@@ -21,10 +21,16 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install "numpy==2.2.6" "pysheds==0.5" "rasterio==1.4.4" "shapely==2.1.2"
-      - run: python3 tools/catchments.py
+      - run: |
+          mkdir -p data/catchments
+          set -o pipefail
+          python3 tools/catchments.py 2>&1 | tee data/catchments/run.log || status=$?
+          python3 -c "import os; p='data/catchments/run.log'; t=os.environ['DATAFORSYNINGEN_TOKEN']; s=open(p).read(); open(p,'w').write(s.replace(t,'<TOKEN>') if t else s)"
+          exit ${status:-0}
         env:
           DATAFORSYNINGEN_TOKEN: ${{ secrets.DATAFORSYNINGEN_TOKEN }}
-      - run: |
+      - if: always()
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ && git commit -qm "Catchments drawn from the elevation model (tools/catchments.py)" && git pull -q --rebase && git push -q
+          git add data/ && git commit -qm "Catchments drawn from the elevation model (tools/catchments.py), with run log" && git pull -q --rebase && git push -q
