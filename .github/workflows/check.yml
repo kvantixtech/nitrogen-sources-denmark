@@ -1,0 +1,29 @@
+name: check
+# Are the data files exactly the ones in the manifest, do the checks in METHOD.md pass,
+# and are the published results exactly what tools/build.py produces?
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "numpy==2.2.6" "shapely==2.1.2"
+      - name: Data files match the manifest
+        run: |
+          python3 -c "
+          import hashlib, json, os
+          m = json.load(open('data/manifest.json'))
+          for f, v in m['files'].items():
+              p = 'data/raw/' + f if os.path.exists('data/raw/' + f) else 'data/' + f
+              assert hashlib.sha256(open(p, 'rb').read()).hexdigest() == v['sha256'], f
+          print('all', len(m['files']), 'files match')"
+      - name: Checks pass and results are up to date
+        run: python3 tools/build.py && git diff --exit-code results/

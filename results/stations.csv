@@ -1,0 +1,198 @@
+stationId,name,chem,stated_km2,drawn_km2,A,clay,n,years,runoff_mm,C,C_ps,P,outermost,system,excluded
+01000690,"Klostergrøften, Munkebro",1000102,28.2000,12.7030,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+02001038,"Elling Å, Elling Kirke",2000005,123.3600,88.1560,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+02001039,"Sæby Å, Hummelbro",2000006,18.6000,91.4020,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+02001040,"Knasborg Å, V. Hovedvejen",2000014,66.4000,43.5310,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+03000501,"Uggerby Å, Astedbro",3000003,152.9800,69.6570,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+05000069,"Voer Å, Fæbroen",5000003,238.6600,234.0790,0.7386,0.0639,5,2017 2018 2019 2020 2021,466.0535,3.8687,3.8507,1960.0000,True,05000069,
+06000475,"Ry Å, Manna",6000001,284.7300,5.9280,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+06000476,"Ryå, Albæk. Fra Hunevej Til Ryå.",6000150,56.8600,38.9540,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+06000477,"Mergelsbæk, Fredenslund",6000427,23.1600,10.3520,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+06000478,"Ryå, Haldagerbro",6000428,65.1000,3.6360,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+07000345,"Stae Bæk, Syd For Nefovej",7000333,27.1500,8.2440,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+08000137,"Gerå, Melholt Kirke",8000001,153.7900,86.9120,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+09001182,"Tranum Å, Oland-Tranum Pumpestation",9000021,123.2000,0.0260,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+09001183,"Tømmerby Å, Langvad Bro",9000022,28.0200,23.0150,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+09001185,"Vester Kanal, Ns. Thistedvej",9000172,32.5200,1.7450,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+09001187,"Vestervig Å, Oksenbøl",9000293,12.1800,13.2550,0.7973,0.7655,5,2017 2018 2019 2020 2021,347.6542,5.4805,5.4397,188.0000,True,09001187,
+09001188,"Storå, A11",9000001,95.7300,16.2030,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+10000986,"Herreds Å, Vegger Bro",10000009,18.1200,112.0010,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+10000993,"Halkær Å, Bro Halkærvej",10000898,192.4000,179.3270,,,,,,,,,,,fish farm or industrial outlet in catchment
+11000355,"Hvidbjerg Å, Hvidbjerg Møllegård",11000011,235.8400,71.9680,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+11000356,"Årup Å, Årup",11000016,108.2700,1.3390,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+11000357,"Koustrup Å, Åbro",11000204,48.1300,48.5140,0.8447,0.7284,5,2017 2018 2019 2020 2021,416.1833,4.3347,4.3258,180.0000,True,11000357,
+13000606,"Lerkenfeld Å, Lerkenfeld Møllegård",13000005,115.2800,109.5590,0.8285,0.0000,5,2017 2018 2019 2020 2021,420.2404,4.9014,4.8855,732.0000,True,13000606,
+13000612,"Bjørnsholm Å, Vitskølkloster",13000065,96.0000,92.2100,,,,,,,,,,,fish farm or industrial outlet in catchment
+14000382,"Lindenborg Å, Lindenborg Bro",14000022,213.8400,5.6240,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+15001088,"Haslevgårds Å, Træpælebro",15000032,81.4500,5.7180,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+15001093,"Kastbjerg Å, Ådalsvej",15000067,91.3800,89.6410,,,,,,,,,,,0 valid years (needs 4)
+15001095,"Korup Å, Høgholt Bro",15000046,6.0000,3.4870,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+15001098,"Villestrup Å, V. Ouegård Bro",15000073,124.9600,117.0180,,,,,,,,,,,0 valid years (needs 4)
+16001369,"Bredkær Bæk, Ns. Kærgård Mølle Dambrug",16000023,16.8900,16.8840,0.6321,0.1881,5,2017 2018 2019 2020 2021,423.6638,4.0582,4.0507,53.0000,True,16001369,
+16001374,"Vium Mølleå, Vium Mølle",16000070,30.6600,29.3170,,,,,,,,,,,fish farm or industrial outlet in catchment
+17000028,"Simested Å, Skive-Hobro Landevej",17000007,218.2500,22.6580,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+17000029,"Simested Å, 10 M Opstrøms Abildvad Bro",17002092,16.4700,21.4140,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+18000263,"Skals Å, Sr. Onsild",18000005,391.2000,342.1830,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+18000264,"Skals Å, Løvel Bro",18000077,556.4300,61.6940,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+19000466,"Jordbro Å, Jordbro Mølle",19000012,11.8500,110.4810,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+19000467,"Lånum Bæk, Bækgård",19000015,17.1300,16.9130,0.8425,0.0002,5,2017 2018 2019 2020 2021,176.0478,4.6909,4.6882,8.0000,True,19000467,
+19000468,"Fiskbæk Å, Nybro Jernbanen",19000016,62.5500,54.3910,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+19000469,"Rævind Bæk, Vejbro Tårup - Sparkær",19000075,20.4200,19.3490,0.6806,0.0007,5,2017 2018 2019 2020 2021,291.2531,2.2111,2.1949,91.0000,True,19000469,
+19000470,"Hald Bæk, Lærkenborgvej",19000214,1.5700,1.6800,,,,,,,,,,,catchment outside 5–3000 km²
+20000910,"Karup Å, Nørkær Bro",20000024,597.3600,606.0030,,,,,,,,,,,fish farm or industrial outlet in catchment
+20000912,"Karup Å, Hagebro",20000026,518.4400,504.9530,,,,,,,,,,,fish farm or industrial outlet in catchment
+20000917,"Skive Å, Østerbro",20000856,762.3800,725.2890,,,,,,,,,,,fish farm or industrial outlet in catchment
+21006839,"Voel Bæk, Voel Bro",21000020,10.5800,12.6110,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006840,"Knud Å, Sophiendal",21000030,32.1900,1.5930,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006841,"Nimdrup Bæk, St 2, 300M Nedstr. Kæmpesmølle",21000040,31.4000,31.4890,0.5877,0.2668,5,2017 2018 2019 2020 2021,154.9896,6.6856,6.5557,634.0000,True,21006841,
+21006842,"Lyså, Dmu Lysbro",21000061,56.4900,53.9710,,,,,,,,,,,fish farm or industrial outlet in catchment
+21006843,"Salten Å, Saltenbro",21000062,121.9700,118.9090,,,,,,,,,,,fish farm or industrial outlet in catchment
+21006845,"Gudenå, Tvilumbro",21000084,1282.4200,153.1240,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006846,"Gudenå, Åstedbro",21000085,189.4700,195.1160,,,,,,,,,,,0 valid years (needs 4)
+21006847,"Gudenå, 500 M Os Vorvadsbro",21000089,377.3300,343.2480,,,,,,,,,,,fish farm or industrial outlet in catchment
+21006851,"Alling Å, Ny Rævebro, Fløjstrup",21000413,237.9400,21.5710,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006852,"Borre Å, Møllebro",21000446,65.9600,67.4510,0.7549,0.6377,5,2017 2018 2019 2020 2021,267.6206,4.5305,4.4431,1576.0000,True,21006852,
+21006853,"Gudenå, Ulstrup Bro",21000461,179.0000,460.2340,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006857,"Funder Å, Funder St.",21000528,41.2800,40.9010,,,,,,,,,,,fish farm or industrial outlet in catchment
+21006858,"Hadsten Lilleå, Lige Ns Løjstrup Dambrug",21001665,300.5000,317.6820,,,,,,,,,,,fish farm or industrial outlet in catchment
+21006860,"Ringkloster Å, Klosterbro",21000587,46.5400,10.1600,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006861,"Salten Å, Rye Bro",21000591,162.0000,32.0170,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006862,"Gudenå, Emborg Bro",21000643,791.1700,408.3480,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006868,"Horndrup Bæk, Sortholmvej LOOP 3",21000752,4.9000,6.2310,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006869,"Javngyde Bæk, Os Rensningsanlæg",21000759,10.5400,10.8520,0.8079,0.7256,5,2017 2018 2019 2020 2021,178.1298,6.2342,6.1985,69.0000,True,21006869,
+21006876,"Ølholm Bæk, Ølholm",21000872,21.9300,21.6010,0.8020,0.8321,5,2017 2018 2019 2020 2021,392.2735,5.8303,5.7557,632.0000,True,21006876,
+21006878,"Gjern Å, Jernbane Dæmning",21000923,17.9600,112.3240,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006881,"Nørre Å, Skjern Bro",21001449,327.2400,8.4540,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006887,"Gudenå, Remstrupå, 100 M Nedstrøms Udløb Fra Papirfabrik",21003549,982.5800,0.6980,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+21006889,"Gudenå, Randers Bro",21006207,2636.9500,104.0440,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+22001654,"Storå, Skærum Bro",22000062,1097.0500,105.1920,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+22001656,"Storå, Ved Gl. Grydholt",22000225,55.0000,341.3770,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+22001667,"Storå, Laksestien",22001541,718.2400,479.4860,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+23000179,"Egå, Lystrupvej, Vest For Lille Mosegård",23000248,55.6800,11.2060,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+23000182,"Kolå, Ved Nybro",23000587,23.0300,22.2200,,,,,,,,,,,0 valid years (needs 4)
+25003908,"Skjern Å, Tykskov",25000018,88.2700,79.4700,,,,,,,,,,,fish farm or industrial outlet in catchment
+25003909,"Omme Å, Farre",25000019,112.1200,78.7380,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+25003910,"Holtum Å, Hygild",25000020,117.2600,111.5610,,,,,,,,,,,fish farm or industrial outlet in catchment
+25003914,"Skjern Å, Alergård",25000082,1054.5800,615.8640,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+26000766,"Århus Å, Ved Skibby",26000082,118.6400,118.8430,0.6138,0.6332,5,2017 2018 2019 2020 2021,270.8419,3.1603,2.8638,9543.0000,True,26000766,
+26000768,"Lyngbygårds Å, A 15",26000096,131.4700,129.8610,,,,,,,,,,,fish farm or industrial outlet in catchment
+27001035,"Odder Å, Fillerup",27000003,13.0000,13.4630,0.6325,0.7683,5,2017 2018 2019 2020 2021,324.6523,4.6647,4.6631,7.0000,True,27001035,
+27001106,"Åkær Å, Ads Mølle",27000055,22.7600,4.6190,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+27001109,"Stampemølle Bæk, Opstrøms Odder Å",27000671,10.7000,29.1480,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+28000260,"Bygholm Å, Kørup Bro",28000001,154.1900,113.1900,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+28000262,"Bygholm Å, Sø Hjørne Af Bygholm Park I Horsens",28000051,181.9400,168.0280,,,,,,,,,,,0 valid years (needs 4)
+30000681,"Hennemølle Å, Bro Porsmosevej V. Henne Møllegård",30000308,169.0000,99.6320,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+31001396,"Grindsted Å, Ved Eg Bro",31000021,200.0000,186.4430,,,,,,,,,,,fish farm or industrial outlet in catchment
+31001398,"Varde Å, V. Vagtborg",31000027,814.5000,69.4920,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+32000997,"Vejle Å, Haraldskær",32000001,198.9000,142.3770,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+32000998,"Grejs Å, Grejsdalens Planteskole",32000004,63.4100,62.5670,,,,,,,,,,,fish farm or industrial outlet in catchment
+32001001,"Højen Å, Nederbro",32000022,29.1600,30.4760,0.6730,0.7690,5,2017 2018 2019 2020 2021,452.0277,3.3577,3.3047,731.0000,True,32001001,
+33000333,"Skærup Å, Pjedsted",33000003,48.0000,6.6210,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+33000334,"Spang Å (Bredstrup Å), Bredstrup",33000004,64.4800,61.9890,0.6875,0.7866,5,2017 2018 2019 2020 2021,374.4094,3.8038,3.7061,2269.0000,True,33000334,
+34000514,"Kolding Å, Ejstrup",34000003,89.9300,211.2800,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+35000722,"Sneum Å, V. Nørå Bro",35000010,224.0000,216.9030,0.7363,0.0008,5,2017 2018 2019 2020 2021,556.6025,3.7647,3.7286,4364.0000,True,35000722,
+36000551,"Konge Å, Ved Konge Bro",36000008,388.0000,381.3860,,,,,,,,,,,fish farm or industrial outlet in catchment
+36000552,"Konge Å, Vilslev Spang",36000009,426.7000,414.1560,,,,,,,,,,,fish farm or industrial outlet in catchment
+37000857,"Taps Å, Ved Rensningsanlæg",37000038,65.7900,65.4440,0.7674,0.8442,5,2017 2018 2019 2020 2021,361.0919,5.3637,5.1764,4426.0000,True,37000857,
+38000861,"Blå Å (Lilleå), T.T. Jels Oversø",38000020,10.8000,12.4440,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+38000862,"Hjortvad Å, V. Bremkrog",38000023,118.0000,0.1690,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+38000863,"Ribe Å, V. Stavnager Bro",38000024,675.2500,371.8940,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+38000866,"Gels Å, Bevtoft",38000097,112.3000,97.5550,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+38000868,"Gram Å, Petersholm",38000107,165.8000,164.7400,0.7804,0.4702,5,2017 2018 2019 2020 2021,479.9802,5.0936,4.9941,7866.0000,True,38000868,
+41000789,"Slotsmølle Å, Vest For Bro Ved Vestmarksvej I Aabenraa.",41000391,11.8700,7.8250,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+42001216,"Grønå, Rørkær",42000016,563.2600,0.0880,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+42001220,"Vidå, Emmerske",42000021,247.7100,0.2370,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+42001223,"Søderup Å, Øst For Bro Ved Vejen Fra Ting",42000366,46.6400,26.8090,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+43000494,"Storå, Møllebro (4.6)",43000001,136.7900,135.9110,0.7255,0.6698,5,2017 2018 2019 2020 2021,248.2476,6.0078,5.7398,9043.0000,True,43000494,
+43000495,"Ringe Å, 3.05",43000003,28.0200,18.5820,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+43000496,"Viby Å, 2.90",43000007,29.1200,27.8610,,,,,,,,,,,0 valid years (needs 4)
+43000497,"Aulby Mølleå, Aulby",43000408,19.3800,18.5510,0.7928,0.8006,5,2017 2018 2019 2020 2021,250.6117,6.8966,6.7357,748.0000,True,43000497,
+43000498,"Kragelund Møllebæk, Kragelund Møllegård",43000432,13.5900,0.0710,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+44000452,"Vindinge Å, Ns Ullerslev Rens. (9.90)",44000021,127.6300,120.0340,0.6808,0.7510,5,2017 2018 2019 2020 2021,220.9677,5.9901,5.5743,11030.0000,True,44000452,
+44000453,"Kogsbølle Bæk, Holckenhavn Nor, Kogsbølle Bæk, Holckenhavn Nor",44000191,15.8200,38.5770,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+44000454,"Ørbæk Å, Æbleskov",44000590,3.0000,18.4370,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+45001605,"Odense Å, Ejby Mølle, Ns Rens (St 8.45)",45000002,535.0700,503.2000,0.6140,0.5592,5,2017 2018 2019 2020 2021,316.4225,4.4769,3.5189,152541.0000,True,45001605,
+45001607,"Odense Å, Kratholm (22.35)",45000003,485.8700,453.0900,0.6546,0.5856,5,2017 2018 2019 2020 2021,297.6298,4.6539,4.5407,15264.0000,False,45001605,
+45001608,"Odense Å, Nørre Broby (St 35.80)",45000004,301.6200,296.0790,0.6423,0.5965,5,2017 2018 2019 2020 2021,271.9660,4.6668,4.5272,11239.0000,False,45001605,
+45001609,"Stavis Å, Stavis Bro (St 8.25)",45000005,78.0400,4.5270,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+45001611,"Arreskov Sø, Tilløb 5",45000034,6.5900,6.0910,0.4078,0.5858,5,2017 2018 2019 2020 2021,112.9256,3.3173,3.3173,0.0000,False,45001605,
+45001612,"Arreskov Sø, Tilløb 1, Arreskov Sø, Tilløb 1",45000035,3.0900,3.0280,,,,,,,,,,,catchment outside 5–3000 km²
+45001613,"Lindved Å, 1.20",45000043,64.7400,56.0390,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+45001614,"Lunde Å, 7.25",45000044,41.6000,42.4320,0.7931,0.7743,5,2017 2018 2019 2020 2021,187.9468,7.0884,6.3877,5588.0000,True,45001614,
+45001615,"Odense Å, Afløb Arreskov Sø",45000045,29.6000,29.2070,,,,,,,,,,,2 valid years (needs 4)
+45001616,"Sallinge Å, 2.50",45000047,72.8800,75.4360,0.6811,0.5394,5,2017 2018 2019 2020 2021,213.6698,5.4617,4.9559,8153.0000,False,45001605,
+45001617,"Geels Å, 3.45",45000058,26.6800,33.7260,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+45001620,"Rislebæk, Sollerup",45000090,3.4800,3.3880,,,,,,,,,,,catchment outside 5–3000 km²
+45001621,"Hågerup Å, Nedstrøms Hågerup",45000117,77.6000,71.5940,0.7044,0.7734,5,2017 2018 2019 2020 2021,306.9500,6.2760,6.1757,2205.0000,False,45001605,
+45001624,"Ryds Å, V. Gransangervej",45001404,42.3800,43.4560,0.5185,0.6018,5,2017 2018 2019 2020 2021,215.2644,3.9762,3.7520,2098.0000,True,45001624,
+45001625,"Vejrup Å, Skovhaven",45001412,41.4800,47.9400,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+46000682,"Brende Å, St . 5.3",46000001,102.5100,60.2110,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+46000717,"Hattebækken, Vej Falsled-Jordløse (0.80)",46000016,16.4800,16.5900,0.7175,0.5187,5,2017 2018 2019 2020 2021,224.9027,3.5903,3.5860,16.0000,True,46000717,
+46000718,"Hårby Å, 3.10",46000017,78.4800,75.5060,0.6772,0.5946,5,2017 2018 2019 2020 2021,264.0572,4.4255,4.2901,2701.0000,True,46000718,
+46000719,"Søholm Sø, Tilløb 1, Søholm Sø, Tilløb 1",46000018,4.1500,2.3410,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+46000720,"Søholm Sø, Afløb, Søholm Sø, Afløb",46000019,5.9500,3.8470,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+46000726,"Kærum Å, Møllerhuse",46000642,18.0000,17.3450,0.7759,0.7529,5,2017 2018 2019 2020 2021,165.5178,5.2525,5.1528,286.0000,True,46000726,
+47000766,"Vejstrup Å, 1.80",47000036,39.9800,40.7730,,,,,,,,,,,0 valid years (needs 4)
+47000854,"Stokkebækken, 1.80",47000037,53.3100,54.8460,0.7358,0.8571,5,2017 2018 2019 2020 2021,287.3389,6.2986,6.0925,3248.0000,True,47000854,
+48000402,"Esrum Å, Ørnevej",48000004,128.1000,2.4930,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+48000403,"Følstrup Bæk, Os Stenholts Mølle",48000006,6.1300,2.5020,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+48000404,"Højbro Å, V. Hanebjerggård",48000007,36.3100,34.1170,0.6075,0.6927,5,2017 2018 2019 2020 2021,194.9717,5.4423,4.9464,3299.0000,True,48000404,
+48000406,"Østerbæk, Sv For Stenstrupgård",48000011,8.9500,9.7790,0.5520,0.4753,5,2017 2018 2019 2020 2021,57.5063,4.8404,4.8208,11.0000,,,runoff 58 mm a year
+49000341,"Arresø Kanal, Arresødal Sluse",49000054,256.6200,0.4380,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+49000342,"Lyngby Å, Pumpestation",49000057,19.4500,21.4360,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+49000343,"Æbelholt Å, Søsterbro Mølle",49000061,11.8500,14.5720,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000530,"Dumpedalsrenden, Vasevej",50000045,7.1000,5.4720,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000531,"Kighanerenden, Caroline Mathildevej",50000048,5.1500,0.2630,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000532,"Mølleå, Afløb Furesø",50000050,78.4700,43.3750,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000533,"Mølleå, Stampen Mølle",50000051,120.5500,86.9760,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000535,"Nive  Å, V. Jellebro",50000056,62.4200,48.7930,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000536,"Usserød Å, Nive Mølle",50000057,74.3900,118.6260,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+50000537,"Hestetangs Å, Kalkværksbro",50000058,8.3900,8.0930,,,,,,,,,,,0 valid years (needs 4)
+51000679,"Svinninge Å, Marke Bro",51000001,37.0000,32.1870,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+51000680,"Kalvemose Å, Butterup Bro",51000002,36.0000,39.2440,0.6740,0.6662,5,2017 2018 2019 2020 2021,139.9660,7.4601,7.2644,1075.0000,True,51000680,
+51000681,"Lammefjord Søkanal, Audebo",51000020,62.3400,31.3010,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+51000682,"Tuse Å, Nybro",51000024,107.0000,107.8440,0.6914,0.6621,5,2017 2018 2019 2020 2021,185.3230,7.0146,6.8515,3259.0000,True,51000682,
+51000683,"Elverdamsåen, V. Kragebro",51000026,34.5400,34.2700,0.5784,0.7682,5,2017 2018 2019 2020 2021,202.2260,5.1395,4.4432,4826.0000,True,51000683,
+51000684,"Ejby Å (Kvl.107), V. Flækkebakke",51000245,20.5600,17.1490,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+51000685,"Elverdams Å, Kildevang (Åsen)",51000250,9.0000,9.2030,,,,,,,,,,,0 valid years (needs 4)
+51000686,"Garverrenden (Privat), Langtved Landevej",51000261,9.5100,9.5460,0.6531,0.7792,5,2017 2018 2019 2020 2021,92.1726,5.8476,5.6533,171.0000,,,runoff 92 mm a year
+52000079,"Nybølle Å, Nybøllevad Bro",52000020,29.1200,22.4990,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+52000092,"Græse Å, V. Hørup, Lindebjerg",52000025,25.3700,25.9460,0.4794,0.5384,5,2017 2018 2019 2020 2021,142.8071,2.6151,0.9192,6284.0000,True,52000092,
+52000151,"Havelse Å, Strø Bro",52000029,102.7000,95.9340,0.5876,0.6219,5,2017 2018 2019 2020 2021,168.8271,5.1818,4.5527,10189.0000,True,52000151,
+52000197,"Mademose Å, S For Tørslev",52000033,5.4300,4.2300,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+52000247,"Værebro Å, V. Veksø Bro",52000039,110.5100,90.9010,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+52000794,"Værebro Å, Nedre Værebro",52000040,148.5700,39.4830,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+52000795,"Hove Å, S. F. Gundsøgård",52000063,67.8900,0.4760,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+52000812,"Langvad Å, Storemøllebro",52000068,175.4800,180.3840,,,,,,,,,,,fish farm or industrial outlet in catchment
+52000850,"Maglemose Å, St.Valby V. Ågerupvej",52000199,26.4900,26.4330,0.5419,0.6012,5,2017 2018 2019 2020 2021,108.2866,4.6451,4.0386,1736.0000,True,52000850,
+52000856,"Sillebro Å, Frederikssund",52001041,29.0500,28.6110,,,,,,,,,,,0 valid years (needs 4)
+53000794,"Ll. Vejle Å, Pilemøllen",53000010,25.5100,8.1700,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+53000796,"Harrestrup Å, Landlystvej",53000028,63.8500,3.7100,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+53000797,"Skensved Å, Øst For Lille Skensved",53000618,28.0000,27.7260,0.8007,0.8044,5,2017 2018 2019 2020 2021,152.7224,8.7027,8.5770,532.0000,True,53000797,
+54000491,"Fladmose Å, Dyssegård",54000002,14.0000,18.2860,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+54000492,"Hulbyrenden, V.F. Billinge Banke",54000009,13.1700,13.6470,0.8270,0.8578,4,2017 2018 2019 2021,96.3937,11.0209,10.9852,47.0000,,,runoff 96 mm a year
+54000493,"Spegerborgrenden, 50 M Os Renseanlæg",54000184,5.9700,7.5080,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+55000489,"Åmose Å, Ugerløse Bro",55000017,112.0000,95.0130,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+55000490,"Åmose Å, Bromølle",55000018,291.0000,235.2640,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+56000293,"Tudeå, Ørslev",56000007,147.9700,65.2720,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+57001283,"Fladså, Rettestrup",57000053,67.9200,43.0150,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+57001286,"Suså, S.F.Holløse Bro",57000058,763.2800,127.3020,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+57001295,"Kyllebæk, Kyllebæk Huse",57000507,18.4300,12.4420,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+58000208,"Køge Å, V. Lellinge Dambrug",58000047,134.3200,141.1430,0.5542,0.7243,5,2017 2018 2019 2020 2021,141.6560,6.7625,6.4629,5991.0000,True,58000208,
+59000235,"Tryggevælde Å, V. Ll. Linde",59000006,129.2200,127.0320,0.6456,0.8471,5,2017 2018 2019 2020 2021,160.3003,7.9976,7.9180,1622.0000,True,59000235,
+60000991,"Køng Å, Pumpestation Indv.",60000029,49.9400,1.6690,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+60000992,"Mern Å, Sageby Bro",60000031,42.8800,41.5040,0.6736,0.8389,5,2017 2018 2019 2020 2021,175.7700,6.2432,6.2253,130.0000,True,60000992,
+60000993,"Næs Å, Pumpestation",60000032,44.3900,2.7140,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+60000999,"Landsledgrøft, Slotshøj",60000212,6.4400,2.8410,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+61000456,"Tingsted Å, Tingsted",61000012,35.9700,59.4960,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+61000459,"Marrebæk Kanal, Pst. Bøtø Nor Udvendig",61000015,77.7800,0.1870,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+61000460,"Tingsted Å,4F, Sønder Kohave",61000094,64.3800,14.4010,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+61000461,"Avl,3F, Pumpestation",61000124,26.8500,0.0660,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+61000463,"Nordkanalen 2F, Pst. Bøtø Nor Indvendig",61000010,35.0400,0.0480,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+62000007,"Halsted Å, Pumpestation Indv.",62000011,67.2900,0.6480,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+62000053,"Højvads Rende, Lille Rosning",62000014,9.8500,10.6170,0.6797,0.8467,5,2017 2018 2019 2020 2021,134.1678,8.4334,8.4292,6.0000,True,62000053,
+62000386,"Ryde Å, Pumpestation Indv.",62000017,79.0100,11.5870,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+63000312,"Sakskøbing Å, Krenkerup",63000007,40.9600,0.3490,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+64000249,"Nældevads Å, Strædeskov (32L)",64000025,42.1300,41.5560,0.7539,0.8824,5,2017 2018 2019 2020 2021,146.8458,8.5541,8.4687,521.0000,True,64000249,
+65000289,"Hovedkanal, 39, Kramnitze Pumpestation",65000001,207.4000,0.4530,,,,,,,,,,,catchment not accepted (±10 % of stated area)
+66000013,"Bagge Å, Ved Målestation 650 M Os Havet",66000014,42.4300,44.5510,,,,,,,,,,,fish farm or industrial outlet in catchment
