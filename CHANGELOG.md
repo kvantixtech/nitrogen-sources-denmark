@@ -26,3 +26,19 @@ Fixed now, before any value is extracted:
 - **Quality mark.** `Kvalitetsmærke` 2 or 3. In Miljøstyrelsen's technical instruction for marine chemistry (DTA DM01), KS1 means "loaded via StanLab". KS2 means "passed the analysis quality control and the KS2 rules of the subject", and only KS2 or higher may be used for reporting. KS3 means approved by the topic centre after its own check. KS1 rows (1,198 rows) are left out. This replaces "flags that mean rejected" in METHOD.md: the file has no rejection flag, only these three levels.
 - **Detection limit.** If `Resultat-attribut` is `<`, the result is taken as half the number given, as METHOD.md says. Rows with `>` are left out. The counts of each attribute are recorded by the extract step.
 - **What goes in the repository.** Every row with the parameter above, unchanged, whatever its fraction, sample type or quality mark, as `data/raw/vandkemi_tn.csv.xz`, cut by `tools/extract_tn.py`. The filters above are applied in `tools/build.py`, so anyone can see what was left out. This is wider than "the candidate stations" in METHOD.md. Nothing is lost by keeping more, and the station pairing then happens in code that CI runs.
+
+## 2026-10-01, evening: extract added (no values read)
+
+- `data/raw/vandkemi_tn.csv.xz` holds 331,527 rows, all `Nitrogen,total N`, ScKode 253, unit mg/l, medium Vandløb. Its SHA-256 is in `data/manifest.json`.
+- **`Resultat-attribut` in these rows:**
+
+  | Value | Rows |
+  |---|---|
+  | `=` (written with a leading no-break space) | 329,128 |
+  | empty | 2,369 |
+  | `<` | 28 |
+  | `<=` | 1 |
+  | `>` | 1 |
+
+- **Rule added before any value is read.** Leading and trailing spaces, including no-break spaces, are stripped. An empty attribute counts as `=`. `<=` is treated like `<`, so the value is half the number given.
+- **Rows that pass the filters fixed above:** 316,446, counted on metadata only.

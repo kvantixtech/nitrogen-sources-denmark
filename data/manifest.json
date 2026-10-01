@@ -1,0 +1,18 @@
+{
+ "note": "Every file in data/raw/ with its SHA-256. Files cut from a download that needs a login also give the SHA-256 of the full download.",
+ "files": {
+  "vandkemi_tn.csv.xz": {
+   "sha256": "595d5b8db540212cd34e7a53bd9380ace3d9cbd3051dbde19ed5215ab3439bd8",
+   "bytes": 10891116,
+   "what": "Every row with Stofparameter 'Nitrogen,total N' (ScKode 253), byte for byte, with the header, cut by tools/extract_tn.py",
+   "rows": 331527,
+   "source": {
+    "dataset": "Danmarks Miljøportal, Arealdata, 'Vandkemi Vandløb' (urn:dmp:ds:vandkemi-vandloeb), CC0 1.0",
+    "downloaded": "2026-10-01 (dataset last updated 2026-10-01 05:10 Danish time), by hand with a login",
+    "sha256": "ec97684fe27c1ceb86b4bbb200940634836a2db8b5abb0d2e38459720987c1e3",
+    "bytes": 1269582881,
+    "records": 2667506
+   }
+  }
+ }
+}
