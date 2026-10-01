@@ -69,6 +69,24 @@
    "bytes": 544,
    "what": "The period, chosen from flow coverage only",
    "made_utc": "2026-10-01T19:47:23Z"
+  },
+  "landuse/attributes.csv": {
+   "sha256": "792b4b920a7d373cd7ba897bf294afe1cff54681ddd3cf4ffcdcdfc90562ef79",
+   "bytes": 16374,
+   "what": "Per accepted catchment: farmland share, clay share, point sources, exclusion flags, district",
+   "made_utc": "2026-10-01T20:19:39Z"
+  },
+  "landuse/national.json": {
+   "sha256": "aee245d76cac7ac88c708325f62d1d233670387938d5f9709a9432fe266730db",
+   "bytes": 698,
+   "what": "National totals of the point layers (check 4) and the district list",
+   "made_utc": "2026-10-01T20:19:39Z"
+  },
+  "landuse/downloads.csv": {
+   "sha256": "f0c8d45fea378075eaa54dcfeb6e0f36b7e1deea3a10558fbbb5fa11cdb23c3e",
+   "bytes": 284894,
+   "what": "Every WFS response behind attributes.csv, with its SHA-256",
+   "made_utc": "2026-10-01T20:19:39Z"
   }
  }
 }

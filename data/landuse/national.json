@@ -1,0 +1,39 @@
+{
+ "plants_count": 633,
+ "plants_n_t": 3850,
+ "outlets_count": 20640,
+ "outlets_n_t": 1476,
+ "fish_farms_count": 130,
+ "industrial_count": 76,
+ "scattered_houses_count": 271627,
+ "districts": [
+  {
+   "distrik_id": "DK1",
+   "distr_id": "DK1",
+   "mst_id": "DK1",
+   "ho_id": "999",
+   "distrik_na": "Jylland og Fyn"
+  },
+  {
+   "distrik_id": "DK2",
+   "distr_id": "DK2",
+   "mst_id": "DK2",
+   "ho_id": "999",
+   "distrik_na": "Sjælland"
+  },
+  {
+   "distrik_id": "DK3",
+   "distr_id": "DK3",
+   "mst_id": "DK3",
+   "ho_id": "999",
+   "distrik_na": "Bornholm"
+  },
+  {
+   "distrik_id": "DK4",
+   "distr_id": "DK4",
+   "mst_id": "DK4",
+   "ho_id": "999",
+   "distrik_na": "Internationalt"
+  }
+ ]
+}

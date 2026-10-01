@@ -1,0 +1,91 @@
+83 accepted catchments, field blocks 2021
+rens: 633 features
+rbu: 20640 features
+ferskdam: 130 features
+ind: 76 features
+distr: 4 features
+national {'plants_count': 633, 'plants_n_t': 3850, 'outlets_count': 20640, 'outlets_n_t': 1476, 'fish_farms_count': 130, 'industrial_count': 76, 'scattered_houses_count': 271627}
+[1/83] 05000069 A=0.73856 L=0.0639 plants=2 outlets=55 fish=0 ind=0
+[2/83] 09001187 A=0.79728 L=0.76551 plants=0 outlets=4 fish=0 ind=0
+[3/83] 10000993 A=0.73503 L=8e-05 plants=4 outlets=85 fish=1 ind=0
+[4/83] 11000357 A=0.84474 L=0.72842 plants=0 outlets=10 fish=0 ind=0
+[5/83] 13000606 A=0.82848 L=1e-05 plants=4 outlets=17 fish=0 ind=0
+[6/83] 13000612 A=0.72016 L=0.00018 plants=1 outlets=18 fish=1 ind=0
+[7/83] 15001093 A=0.75266 L=0.12542 plants=0 outlets=24 fish=0 ind=0
+[8/83] 15001098 A=0.67638 L=0.00015 plants=0 outlets=27 fish=0 ind=0
+[9/83] 16001369 A=0.63205 L=0.18807 plants=0 outlets=2 fish=0 ind=0
+[10/83] 16001374 A=0.84882 L=0.58065 plants=0 outlets=10 fish=0 ind=1
+[11/83] 19000467 A=0.84247 L=0.00017 plants=0 outlets=1 fish=0 ind=0
+[12/83] 19000469 A=0.68064 L=0.00067 plants=0 outlets=8 fish=0 ind=0
+[13/83] 19000470 A=0.61293 L=0.08305 plants=0 outlets=1 fish=0 ind=0
+[14/83] 20000910 A=0.5673 L=0.01264 plants=2 outlets=76 fish=10 ind=0
+[15/83] 20000912 A=0.52781 L=0.01414 plants=1 outlets=57 fish=10 ind=0
+[16/83] 20000917 A=0.57591 L=0.02968 plants=2 outlets=141 fish=10 ind=0
+[17/83] 21006841 A=0.58768 L=0.26676 plants=0 outlets=14 fish=0 ind=0
+[18/83] 21006842 A=0.32754 L=0.00083 plants=0 outlets=28 fish=3 ind=0
+[19/83] 21006843 A=0.44711 L=0.081 plants=1 outlets=30 fish=3 ind=0
+[20/83] 21006846 A=0.73787 L=0.34785 plants=2 outlets=96 fish=0 ind=0
+[21/83] 21006847 A=0.69492 L=0.3529 plants=3 outlets=123 fish=2 ind=0
+[22/83] 21006852 A=0.75491 L=0.63767 plants=2 outlets=19 fish=0 ind=0
+[23/83] 21006857 A=0.37717 L=0.00109 plants=0 outlets=2 fish=2 ind=0
+[24/83] 21006858 A=0.67562 L=0.74179 plants=4 outlets=178 fish=1 ind=1
+[25/83] 21006869 A=0.80787 L=0.72561 plants=0 outlets=4 fish=0 ind=0
+[26/83] 21006876 A=0.80201 L=0.83214 plants=0 outlets=14 fish=0 ind=0
+[27/83] 23000182 A=0.72107 L=0.59284 plants=1 outlets=4 fish=0 ind=0
+[28/83] 25003908 A=0.52132 L=0.00038 plants=1 outlets=23 fish=1 ind=0
+[29/83] 25003910 A=0.52446 L=0.00027 plants=1 outlets=25 fish=1 ind=0
+[30/83] 26000766 A=0.61384 L=0.63322 plants=3 outlets=124 fish=0 ind=0
+[31/83] 26000768 A=0.63739 L=0.69183 plants=1 outlets=100 fish=0 ind=1
+[32/83] 27001035 A=0.63248 L=0.76834 plants=0 outlets=1 fish=0 ind=0
+[33/83] 28000262 A=0.6774 L=0.63916 plants=0 outlets=150 fish=0 ind=0
+[34/83] 31001396 A=0.51764 L=0.00036 plants=1 outlets=44 fish=3 ind=0
+[35/83] 32000998 A=0.6384 L=0.69133 plants=0 outlets=30 fish=3 ind=0
+[36/83] 32001001 A=0.67296 L=0.76899 plants=0 outlets=23 fish=0 ind=0
+[37/83] 33000334 A=0.68753 L=0.78656 plants=0 outlets=23 fish=0 ind=0
+[38/83] 35000722 A=0.73627 L=0.00081 plants=2 outlets=37 fish=0 ind=0
+[39/83] 36000551 A=0.75194 L=0.16163 plants=2 outlets=165 fish=3 ind=0
+[40/83] 36000552 A=0.75694 L=0.14891 plants=3 outlets=175 fish=4 ind=0
+[41/83] 37000857 A=0.7674 L=0.84419 plants=1 outlets=19 fish=0 ind=0
+[42/83] 38000868 A=0.78037 L=0.47021 plants=4 outlets=32 fish=0 ind=0
+[43/83] 43000494 A=0.72547 L=0.66983 plants=3 outlets=60 fish=0 ind=0
+[44/83] 43000496 A=0.73055 L=0.72834 plants=1 outlets=25 fish=0 ind=0
+[45/83] 43000497 A=0.79276 L=0.8006 plants=0 outlets=15 fish=0 ind=0
+[46/83] 44000452 A=0.68081 L=0.75096 plants=2 outlets=74 fish=0 ind=0
+[47/83] 45001605 A=0.61404 L=0.55924 plants=8 outlets=261 fish=0 ind=0
+[48/83] 45001607 A=0.65462 L=0.58555 plants=7 outlets=154 fish=0 ind=0
+[49/83] 45001608 A=0.64233 L=0.59654 plants=5 outlets=99 fish=0 ind=0
+[50/83] 45001611 A=0.40777 L=0.58583 plants=0 outlets=0 fish=0 ind=0
+[51/83] 45001612 A=0.78342 L=0.37277 plants=0 outlets=0 fish=0 ind=0
+[52/83] 45001614 A=0.79307 L=0.77433 plants=1 outlets=23 fish=0 ind=0
+[53/83] 45001615 A=0.44712 L=0.40035 plants=0 outlets=4 fish=0 ind=0
+[54/83] 45001616 A=0.68111 L=0.53936 plants=3 outlets=40 fish=0 ind=0
+[55/83] 45001620 A=0.25674 L=0.41282 plants=0 outlets=0 fish=0 ind=0
+[56/83] 45001621 A=0.70438 L=0.77342 plants=2 outlets=24 fish=0 ind=0
+[57/83] 45001624 A=0.51853 L=0.6018 plants=0 outlets=53 fish=0 ind=0
+[58/83] 46000717 A=0.71753 L=0.51871 plants=0 outlets=2 fish=0 ind=0
+[59/83] 46000718 A=0.67718 L=0.59462 plants=1 outlets=68 fish=0 ind=0
+[60/83] 46000726 A=0.7759 L=0.75291 plants=0 outlets=6 fish=0 ind=0
+[61/83] 47000766 A=0.64791 L=0.79048 plants=0 outlets=11 fish=0 ind=0
+[62/83] 47000854 A=0.7358 L=0.85715 plants=1 outlets=12 fish=0 ind=0
+[63/83] 48000404 A=0.60748 L=0.69274 plants=1 outlets=11 fish=0 ind=0
+[64/83] 48000406 A=0.55196 L=0.47525 plants=0 outlets=1 fish=0 ind=0
+[65/83] 50000537 A=0.3791 L=0.64497 plants=0 outlets=1 fish=0 ind=0
+[66/83] 51000680 A=0.67404 L=0.66617 plants=1 outlets=25 fish=0 ind=0
+[67/83] 51000682 A=0.69144 L=0.6621 plants=2 outlets=39 fish=0 ind=0
+[68/83] 51000683 A=0.57842 L=0.76823 plants=1 outlets=19 fish=0 ind=0
+[69/83] 51000685 A=0.56057 L=0.84789 plants=0 outlets=1 fish=0 ind=0
+[70/83] 51000686 A=0.65312 L=0.77925 plants=0 outlets=5 fish=0 ind=0
+[71/83] 52000092 A=0.47943 L=0.53838 plants=2 outlets=58 fish=0 ind=0
+[72/83] 52000151 A=0.58758 L=0.62194 plants=1 outlets=60 fish=0 ind=0
+[73/83] 52000812 A=0.6214 L=0.71444 plants=5 outlets=159 fish=0 ind=3
+[74/83] 52000850 A=0.5419 L=0.60125 plants=1 outlets=20 fish=0 ind=0
+[75/83] 52000856 A=0.58865 L=0.49478 plants=0 outlets=47 fish=0 ind=0
+[76/83] 53000797 A=0.80068 L=0.80436 plants=1 outlets=23 fish=0 ind=0
+[77/83] 54000492 A=0.82697 L=0.85781 plants=0 outlets=6 fish=0 ind=0
+[78/83] 58000208 A=0.55419 L=0.72427 plants=5 outlets=127 fish=0 ind=0
+[79/83] 59000235 A=0.64561 L=0.84708 plants=1 outlets=52 fish=0 ind=0
+[80/83] 60000992 A=0.67356 L=0.83886 plants=0 outlets=7 fish=0 ind=0
+[81/83] 62000053 A=0.6797 L=0.84672 plants=0 outlets=1 fish=0 ind=0
+[82/83] 64000249 A=0.75391 L=0.88244 plants=0 outlets=11 fish=0 ind=0
+[83/83] 66000013 A=0.77907 L=0.79054 plants=0 outlets=11 fish=0 ind=1
+done 83
