@@ -45,6 +45,30 @@
    "bytes": 12181,
    "what": "Elevation tiles used, with the request (no token) and SHA-256 of each",
    "made_utc": "2026-10-01T19:04:28Z"
+  },
+  "flow/daily.csv.xz": {
+   "sha256": "290b708b6f1da0d09efa568d3051a916251a0abb4fd532dfa325c8537cf21e31",
+   "bytes": 3231192,
+   "what": "Daily mean discharge (l/s, UTC dates) per candidate station, 2010-2025, from VanDa water-flows",
+   "made_utc": "2026-10-01T19:47:23Z"
+  },
+  "flow/downloads.csv": {
+   "sha256": "c0d1130601dc5bf3c98239e0946465b6fc8d0998b7ecc8304ce779e04a5daf42",
+   "bytes": 287541,
+   "what": "Size, row count and SHA-256 of every VanDa download behind daily.csv.xz",
+   "made_utc": "2026-10-01T19:47:23Z"
+  },
+  "flow/coverage.csv": {
+   "sha256": "00e2c088e252579812bb4a0806881f82a6b66dbc776b21a9b52314093672d8e5",
+   "bytes": 100726,
+   "what": "Days with flow, longest gap and validity per station-year",
+   "made_utc": "2026-10-01T19:47:23Z"
+  },
+  "flow/period.json": {
+   "sha256": "f73468bb5764506aef5db75eea17ec8b027393eb9aa35b8eab07e8390910a4e3",
+   "bytes": 544,
+   "what": "The period, chosen from flow coverage only",
+   "made_utc": "2026-10-01T19:47:23Z"
   }
  }
 }
