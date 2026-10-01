@@ -1,0 +1,30 @@
+name: catchments
+# Draws the catchment of every candidate flow station from the elevation model (tools/catchments.py)
+# and commits the result. Needs the repository secret DATAFORSYNINGEN_TOKEN; the token is never written to a file.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: ["tools/catchments.py", ".github/workflows/catchments.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: catchments
+  cancel-in-progress: false
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "numpy==2.2.6" "pysheds==0.5" "rasterio==1.4.4" "shapely==2.1.2"
+      - run: python3 tools/catchments.py
+        env:
+          DATAFORSYNINGEN_TOKEN: ${{ secrets.DATAFORSYNINGEN_TOKEN }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ && git commit -qm "Catchments drawn from the elevation model (tools/catchments.py)" && git pull -q --rebase && git push -q

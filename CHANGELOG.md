@@ -69,3 +69,13 @@ Fixed now, before any value is extracted:
 - **R8 regression.** `C_ps = b0 + b1·L + s·A`, with the same resampling.
 - **Reported.** Background on sand (`L = 0`) and on clay (`L = 1`).
 - **Role.** Like the other checks, R8 is reported next to the primary result and never replaces it.
+
+## 2026-10-01, evening: candidates for drawing catchments
+
+- `tools/catchments.py` draws a catchment for every flow station that meets three conditions:
+  - it has a stated catchment area
+  - it is a VanDa flow station (type 27)
+  - a total-nitrogen chemistry station has the same number or lies within 500 m.
+- The chemistry station positions are the coordinates in `data/raw/vandkemi_tn.csv.xz`. These are the stations that actually have total-nitrogen rows. The open WFS layer would add stations with no nitrogen data, which could never be paired.
+- Only coordinates and station numbers are read, no values. From the station list of 2026-10-01 this gives 197 candidates.
+- Flow years, the period and the pairing rules in METHOD.md come later, in `tools/build.py`.
