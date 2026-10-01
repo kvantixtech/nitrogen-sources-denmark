@@ -1,0 +1,21 @@
+name: probe
+# Temporary, on the branch "probe" only: checks access to sources before tools/fetch.py is written.
+on:
+  push:
+    branches: ["probe"]
+    paths: ["probe/probe.py", ".github/workflows/probe.yml"]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 probe/probe.py
+        env:
+          DATAFORSYNINGEN_TOKEN: ${{ secrets.DATAFORSYNINGEN_TOKEN }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add probe/ && git commit -qm "probe result" && git push -q
