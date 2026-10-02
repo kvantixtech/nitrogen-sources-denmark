@@ -1,0 +1,260 @@
+{
+ "run_utc": "2026-10-02T04:19:05Z",
+ "tries": {
+  "dmi_climate_stations": {
+   "url": "https://opendataapi.dmi.dk/v2/climateData/collections/station/items?bbox=4.5,53.0,11.0,58.0&limit=10000",
+   "status": 200,
+   "bytes": 2224617,
+   "type": "application/json",
+   "length": null,
+   "seconds": 1.8,
+   "saved": "dmi_climate_stations.json"
+  },
+  "dmi_metobs_stations": {
+   "url": "https://opendataapi.dmi.dk/v2/metObs/collections/station/items?bbox=4.5,53.0,11.0,58.0&limit=10000",
+   "status": 200,
+   "bytes": 331127,
+   "type": "application/json",
+   "length": null,
+   "seconds": 1.1,
+   "saved": "dmi_metobs_stations.json"
+  },
+  "dmi_climate_collections": {
+   "url": "https://opendataapi.dmi.dk/v2/climateData/collections",
+   "status": 200,
+   "bytes": 3674,
+   "type": "application/json",
+   "length": null,
+   "seconds": 0.4,
+   "saved": "dmi_climate_collections.json"
+  },
+  "dwd_rr_hist": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/more_precip/historical/",
+   "status": 200,
+   "bytes": 948471,
+   "type": "text/html",
+   "length": null,
+   "seconds": 1.7,
+   "entries": 6158
+  },
+  "dwd_rr_hist_stations": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/more_precip/historical/RR_Tageswerte_Beschreibung_Stationen.txt",
+   "status": 200,
+   "bytes": 6640479,
+   "type": "text/plain",
+   "length": "6640479",
+   "seconds": 2.4,
+   "saved": "dwd_rr_hist_stations.txt"
+  },
+  "dwd_rr_recent": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/more_precip/recent/",
+   "status": 200,
+   "bytes": 313639,
+   "type": "text/html",
+   "length": null,
+   "seconds": 1.1,
+   "entries": 2322
+  },
+  "dwd_rr_recent_stations": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/more_precip/recent/RR_Tageswerte_Beschreibung_Stationen.txt",
+   "status": 200,
+   "bytes": 6640479,
+   "type": "text/plain",
+   "length": "6640479",
+   "seconds": 2.3,
+   "saved": "dwd_rr_recent_stations.txt"
+  },
+  "dwd_kl_hist": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/",
+   "status": 200,
+   "bytes": 198319,
+   "type": "text/html",
+   "length": null,
+   "seconds": 1.1,
+   "entries": 1287
+  },
+  "dwd_kl_hist_stations": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/KL_Tageswerte_Beschreibung_Stationen.txt",
+   "status": 200,
+   "bytes": 1388997,
+   "type": "text/plain",
+   "length": "1388997",
+   "seconds": 1.8,
+   "saved": "dwd_kl_hist_stations.txt"
+  },
+  "dwd_hyras": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/grids_germany/daily/hyras_de/precipitation/",
+   "status": 200,
+   "bytes": 26686,
+   "type": "text/html",
+   "length": null,
+   "seconds": 1.6,
+   "entries": 198
+  },
+  "dwd_radklim_rw": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/grids_germany/hourly/radolan/reproc/2017_002/",
+   "status": 200,
+   "bytes": 612,
+   "type": "text/html",
+   "length": null,
+   "seconds": 0.5,
+   "entries": 4
+  },
+  "dwd_regnie": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/grids_germany/daily/regnie/",
+   "status": 200,
+   "bytes": 361,
+   "type": "text/html",
+   "length": null,
+   "seconds": 0.5,
+   "entries": 2
+  },
+  "dwd_terms": {
+   "url": "https://opendata.dwd.de/climate_environment/CDC/Terms_of_use.pdf",
+   "status": 200,
+   "bytes": 0,
+   "type": "application/pdf",
+   "length": "61006",
+   "seconds": 0.7
+  },
+  "emodnet_describe": {
+   "url": "https://ows.emodnet-humanactivities.eu/wfs?service=WFS&version=2.0.0&request=DescribeFeatureType&typeNames=emodnet%3Awindfarmspoly",
+   "status": 200,
+   "bytes": 2156,
+   "type": "application/gml+xml; version=3.2",
+   "length": null,
+   "seconds": 0.9,
+   "saved": "emodnet_describe.xml"
+  },
+  "emodnet_windfarmspoly": {
+   "url": "https://ows.emodnet-humanactivities.eu/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=emodnet%3Awindfarmspoly&outputFormat=application%2Fjson&srsName=EPSG%3A4326",
+   "status": 200,
+   "bytes": 1842247,
+   "type": "application/json;charset=UTF-8",
+   "length": null,
+   "seconds": 1.2,
+   "saved": "emodnet_windfarmspoly.geojson"
+  },
+  "emodnet_windfarms": {
+   "url": "https://ows.emodnet-humanactivities.eu/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=emodnet%3Awindfarms&outputFormat=application%2Fjson&srsName=EPSG%3A4326",
+   "status": 200,
+   "bytes": 209952,
+   "type": "application/json;charset=UTF-8",
+   "length": null,
+   "seconds": 0.6,
+   "saved": "emodnet_windfarms.geojson"
+  },
+  "rws_caps": {
+   "url": "https://geo.rijkswaterstaat.nl/services/ogc/gdr/windenergiegebieden/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities",
+   "status": 200,
+   "bytes": 101339,
+   "type": "application/xml",
+   "length": null,
+   "seconds": 0.9,
+   "head": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><wfs:WFS_Capabilities version=\"2.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://www.opengis.net/wfs/2.0\" xmlns:wfs=\"http://www.opengis.net/wfs/2.0\" xmlns:ows=\"http://www.opengis.net/ows/1.1\" xmlns:gml=\"http://www.opengis.net/gml/3.2\" xmlns:fes=\"http://www.opengis.net/fes/2.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xs=\"http:/"
+  },
+  "ens_page": {
+   "url": "https://ens.dk/service/statistik-data-noegletal-og-kort/data-oversigt-over-energisektoren",
+   "status": 200,
+   "bytes": 72832,
+   "type": "text/html; charset=UTF-8",
+   "length": "72832",
+   "seconds": 1.4,
+   "links": [
+    "https://sologvindinfo.dk/spatialmap"
+   ]
+  },
+  "mastr_page": {
+   "url": "https://www.marktstammdatenregister.de/MaStR/Datendownload",
+   "status": 200,
+   "bytes": 50433,
+   "type": "text/html; charset=utf-8",
+   "length": "50433",
+   "seconds": 1.2,
+   "links": [
+    "https://download.marktstammdatenregister.de/Gesamtdatenexport_20261002_26.2.zip"
+   ]
+  },
+  "mastr_head": {
+   "url": "https://download.marktstammdatenregister.de/Gesamtdatenexport_20261002_26.2.zip",
+   "status": 200,
+   "bytes": 0,
+   "type": "application/x-zip-compressed",
+   "length": "3215850240",
+   "seconds": 0.6
+  },
+  "cds_era5_single": {
+   "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels",
+   "status": 200,
+   "bytes": 7666,
+   "type": "application/json",
+   "length": "7666",
+   "seconds": 1.7,
+   "head": "{\"type\":\"Collection\",\"id\":\"reanalysis-era5-single-levels\",\"stac_version\":\"1.1.0\",\"title\":\"ERA5 hourly data on single levels from 1940 to present\",\"description\":\"ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades.\\nData is available from 1940 onwar"
+  },
+  "cds_era5_pressure": {
+   "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-pressure-levels",
+   "status": 200,
+   "bytes": 7474,
+   "type": "application/json",
+   "length": "7474",
+   "seconds": 1.0,
+   "head": "{\"type\":\"Collection\",\"id\":\"reanalysis-era5-pressure-levels\",\"stac_version\":\"1.1.0\",\"title\":\"ERA5 hourly data on pressure levels from 1940 to present\",\"description\":\"ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades.\\nData is available from 1940 o"
+  },
+  "arco_v3_zarrjson": {
+   "url": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3/zarr.json",
+   "error": "HTTP Error 404: Not Found"
+  },
+  "arco_v3_zmeta": {
+   "url": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3/.zmetadata",
+   "status": 200,
+   "bytes": 132785,
+   "type": "application/octet-stream",
+   "length": "132785",
+   "seconds": 0.0,
+   "has_total_precipitation": true,
+   "has_u_component_of_wind": true,
+   "time_shape": []
+  },
+  "arco_v2_zmeta": {
+   "url": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/1959-2022-full_37-1h-0p25deg-chunk-1.zarr-v2/.zmetadata",
+   "status": 200,
+   "bytes": 30766,
+   "type": "application/octet-stream",
+   "length": "30766",
+   "seconds": 0.1,
+   "has_total_precipitation": true,
+   "has_u_component_of_wind": true,
+   "time_shape": []
+  },
+  "opera_api": {
+   "url": "https://api.meteogate.eu/eu-eumetnet-weather-radar",
+   "status": 200,
+   "bytes": 1159,
+   "type": "application/json",
+   "length": null,
+   "seconds": 0.5,
+   "head": "{\"title\":\"OpenRadarData API\",\"description\":\"OGC EDR API data service for European weather radar observations from OPERA-EUMETNET\",\"links\":[{\"href\":\"https://api.meteogate.eu/eu-eumetnet-weather-radar/\",\"rel\":\"self\",\"type\":\"application/json\",\"title\":\"Landing Page in JSON\"},{\"href\":\"https://api.meteogate.eu/eu-eumetnet-weather-radar/docs\",\"rel\":\"service-doc\",\"type\":\"text/html\",\"title\":\"API description in HTML\"},{\"href\":\"https://api.meteogate.eu/eu-eumetnet-weather-radar/openapi.json\",\"rel\":\"service-desc\",\"type\":\"application/vnd.oai.openapi+json;version=3.1\",\"title\":\"API description in JSON\"},{\"hr"
+  },
+  "knmi_series_page": {
+   "url": "https://www.knmi.nl/nederland-nu/klimatologie/monv/reeksen",
+   "status": 200,
+   "bytes": 0,
+   "type": "text/html; charset=utf-8",
+   "length": "0",
+   "seconds": 0.6
+  },
+  "knmi_api": {
+   "url": "https://api.dataplatform.knmi.nl/open-data/v1/datasets",
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "imerg_dir": {
+   "url": "https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/GPM_3IMERGDF.07/",
+   "status": 200,
+   "bytes": 0,
+   "type": "text/html;charset=ISO-8859-1",
+   "length": null,
+   "seconds": 0.1
+  }
+ }
+}
