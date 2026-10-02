@@ -105,3 +105,9 @@ The latest completed year with at least 75 % is 2021. Most stations have no publ
 
 - **Field blocks.** The field-block year is therefore 2021 (`Markblokke:Markblokke_2021`).
 - **Point sources.** They remain the 2024 layer, three years after the period ends. METHOD.md lists this as a limitation, and the results will state the gap.
+
+## 2026-10-02: request to DCE sent (correction of an earlier entry)
+
+- The entry of 2026-10-01 on the catchment source says "Kvantix has asked." That was written too early. The request was only sent on **2 October 2026**: to Aarhus University, DCE, Fagdatacenter for Ferskvand, the contact person for substance transport in streams. It asks whether the station catchments can be published.
+- **Nothing in the analysis changes.** The result above stands as published.
+- If DCE's catchments become available, the analysis is run again with them. The change is logged here with its reason, and this result is kept next to the new one.
