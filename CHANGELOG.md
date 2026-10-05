@@ -111,3 +111,42 @@ The latest completed year with at least 75 % is 2021. Most stations have no publ
 - The entry of 2026-10-01 on the catchment source says "Kvantix has asked." That was written too early. The request was only sent on **2 October 2026**: to Aarhus University, DCE, Fagdatacenter for Ferskvand, the contact person for substance transport in streams. It asks whether the station catchments can be published.
 - **Nothing in the analysis changes.** The result above stands as published.
 - If DCE's catchments become available, the analysis is run again with them. The change is logged here with its reason, and this result is kept next to the new one.
+
+## 2026-10-05: DCE's station catchments received (a change after the result; the rule is fixed before the rerun)
+
+**What arrived.**
+- On 5 October 2026 DCE (Aarhus University, Fagdatacenter for Ferskvand) sent its catchments for the chemistry stations. File: `tot_opl_kemi_2026`, a shapefile in ETRS89 / UTM 32N, with 798 polygons. Its fields are the station number `St` and the area.
+- DCE wrote that the catchments may be used. We have asked whether the file may also be published in this repository. Until DCE answers, the file is not committed.
+- SHA-256 of the files received:
+  - `.shp`: `154d5eebda4505e5a05c9af7ad93c95085a6678031fbc5cce367e22534ab2e67`
+  - `.dbf`: `90b532f993aeaa5b57f24f8d5235e9bc59d04cc0320d871f32fdb93a3b9ec8ff`
+  - `.shx`: `61b3f5b158d5f4197d0d6061f7088ec14fa6dbad8607cf97085dddae0f471f85`
+  - `.prj`: `2bfc323fa76efbd54e39e220c4d8f16ab79728c0eab137ab43fe7fee726e60dc`
+
+**This change is made after a result exists.**
+- The result of 2 October (reading: Inconclusive) stays published unchanged.
+- The new run is reported next to it as "rerun with DCE's catchments".
+- DCE's own catchments were source 1 in the order fixed on 1 October, before any value was read. They were not available then.
+
+**What was checked before this rule was written.** Only station numbers, station positions and areas. No nitrogen value, no flow value and no score was computed.
+- All 197 candidates have a DCE polygon: 194 under the number of the paired chemistry station, and 3 under the flow station's old number.
+- The median ratio of DCE area to stated area is 1.000. 180 of 197 are within ±10 % (83 for the catchments we drew).
+- 11 polygons are 2–10 times the stated area. In those pairs the chemistry station lies on a larger stream than the flow station.
+- 13 flow-station points lie 100–400 m outside their polygon. For 12 of them the area ratio is 0.95–1.01, so the polygon fits and the station position is the imprecise part.
+
+**Rule for the rerun.**
+1. **Catchment of a pair:** the DCE polygon whose `St` is the number of the paired chemistry station. If there is none, the polygon numbered as the flow station is used, and after that the flow station's old number (`oldStationNumber` in VanDa).
+2. **Acceptance:**
+   - the area is within ±10 % of the flow station's stated area (unchanged)
+   - the flow station's point lies within 500 m of the polygon (new; the same distance as the pairing rule).
+
+   A polygon that fails either test is excluded, and the reason is listed.
+3. **Everything else is unchanged,** as fixed in `METHOD.md` and the entries above:
+   - period 2017–2021, field blocks 2021, point sources 2024, soil, exclusions, regression, resampling, R1–R8 and the reading
+   - farmland share, clay share and point sources are computed again with `tools/landuse.py` on the DCE polygons.
+4. **R6 is still not run.** It needs stations without a stated area.
+5. **Separate outputs:** `data/catchments_dce/`, `data/landuse_dce/` and `results_dce/`. The files behind the first result are not overwritten.
+
+**Credit:** catchments from DCE – Danish Centre for Environment and Energy, Aarhus University.
+
+DCE also pointed to ODA for alle (odaforalle.au.dk), which publishes chemistry, flow and computed transports. It is not used in this rerun. Any use of it would be a separate check, logged here first.
