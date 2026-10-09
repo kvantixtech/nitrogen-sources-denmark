@@ -16,6 +16,9 @@ features are de-duplicated by geometry, and each response's SHA-256 is listed. R
 
     python3 tools/landuse.py
 Writes data/landuse/{attributes.csv, national.json, downloads.csv}.
+
+    KVX_CATCHMENTS=dce python3 tools/landuse.py
+The same on DCE's station catchments (data/catchments_dce/), written to data/landuse_dce/ (CHANGELOG.md, 5 and 9 Oct 2026).
 """
 import csv, hashlib, json, os, sys, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -25,7 +28,12 @@ from shapely.strtree import STRtree
 from shapely import wkb
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "data", "landuse")
+VARIANT = os.environ.get("KVX_CATCHMENTS", "")
+if VARIANT not in ("", "dce"):
+    sys.exit(f"unknown KVX_CATCHMENTS={VARIANT!r}")
+CAT = "catchments_dce" if VARIANT == "dce" else "catchments"
+LAND = "landuse_dce" if VARIANT == "dce" else "landuse"
+OUT = os.path.join(ROOT, "data", LAND)
 UA = "kvantixtech nitrogen-sources-denmark (github actions; validation@kvantix.tech)"
 FVM = "https://geodata.fvm.dk/geoserver/ows"
 MIM = "https://wfs2-miljoegis.mim.dk/ows"
@@ -106,8 +114,8 @@ def num(v):
 def main():
     period = json.load(open(os.path.join(ROOT, "data", "flow", "period.json")))
     year = period["years"][-1]
-    gj = json.load(open(os.path.join(ROOT, "data", "catchments", "catchments.geojson")))
-    summ = {r["stationId"]: r for r in csv.DictReader(open(os.path.join(ROOT, "data", "catchments", "summary.csv"), encoding="utf-8"))}
+    gj = json.load(open(os.path.join(ROOT, "data", CAT, "catchments.geojson")))
+    summ = {r["stationId"]: r for r in csv.DictReader(open(os.path.join(ROOT, "data", CAT, "summary.csv"), encoding="utf-8"))}
     cats = [(f["properties"]["stationId"], shape(f["geometry"])) for f in gj["features"] if f["properties"]["accepted"]]
     print(f"{len(cats)} accepted catchments, field blocks {year}", flush=True)
     os.makedirs(OUT, exist_ok=True)
@@ -179,7 +187,7 @@ def main():
                     ("national.json", "National totals of the point layers (check 4) and the district list"),
                     ("downloads.csv", "Every WFS response behind attributes.csv, with its SHA-256")):
         p = os.path.join(OUT, f)
-        man["files"]["landuse/" + f] = {"sha256": hashlib.sha256(open(p, "rb").read()).hexdigest(), "bytes": os.path.getsize(p),
+        man["files"][LAND + "/" + f] = {"sha256": hashlib.sha256(open(p, "rb").read()).hexdigest(), "bytes": os.path.getsize(p),
                                         "what": what, "made_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
     json.dump(man, open(man_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False); open(man_path, "a").write("\n")
     print("done", len(rows))

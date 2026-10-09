@@ -3,6 +3,10 @@
 
     python3 tools/build.py
 Exits 1 if a check in METHOD.md fails; results are still written, marked as not shown.
+
+    KVX_CATCHMENTS=dce python3 tools/build.py
+The rerun with DCE's station catchments (CHANGELOG.md, 5 and 9 October 2026): reads data/catchments_dce/ and
+data/landuse_dce/, writes results_dce/. Runoff uses the DCE polygon's area; nesting is by polygon overlap.
 """
 import calendar, csv, datetime as dt, io, json, lzma, math, os, re, sys
 from collections import Counter, defaultdict
@@ -10,7 +14,13 @@ import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = lambda *p: os.path.join(ROOT, "data", *p)
-OUT = os.path.join(ROOT, "results")
+VARIANT = os.environ.get("KVX_CATCHMENTS", "")
+if VARIANT not in ("", "dce"):
+    sys.exit(f"unknown KVX_CATCHMENTS={VARIANT!r}")
+DCE = VARIANT == "dce"
+CAT = "catchments_dce" if DCE else "catchments"
+LAND = "landuse_dce" if DCE else "landuse"
+OUT = os.path.join(ROOT, "results_dce" if DCE else "results")
 SEED, NBOOT = 20261001, 10000
 PARAM = "Nitrogen,total N"
 FRACTIONS = {"Total", "Ej oplyst"}
@@ -42,9 +52,9 @@ def read_csv(path):
 def load():
     period = json.load(open(D("flow", "period.json")))
     years = period["years"]
-    cat = {r["stationId"]: r for r in read_csv(D("catchments", "summary.csv"))}
-    att = {r["stationId"]: r for r in read_csv(D("landuse", "attributes.csv"))}
-    national = json.load(open(D("landuse", "national.json"), encoding="utf-8"))
+    cat = {r["stationId"]: r for r in read_csv(D(CAT, "summary.csv"))}
+    att = {r["stationId"]: r for r in read_csv(D(LAND, "attributes.csv"))}
+    national = json.load(open(D(LAND, "national.json"), encoding="utf-8"))
     cov = {(r["stationId"], int(r["year"])): r["valid"] == "True" for r in read_csv(D("flow", "coverage.csv"))}
     flow = defaultdict(dict)
     with lzma.open(D("flow", "daily.csv.xz"), "rt", encoding="utf-8", newline="") as fh:
@@ -154,7 +164,8 @@ def main():
     for sid, cr in sorted(cat.items()):
         why = None
         stated = float(cr["stated_km2"])
-        if cr["accepted"] != "True": why = "catchment not accepted (±10 % of stated area)"
+        if cr["accepted"] != "True":
+            why = f"catchment not accepted ({cr['reason']})" if DCE else "catchment not accepted (±10 % of stated area)"
         elif not (5 <= stated <= 3000): why = "catchment outside 5–3000 km²"
         a = att.get(sid)
         if why is None and a is None: why = "no land-use attributes"
@@ -167,6 +178,8 @@ def main():
                 n_in = sum(1 for day in chem.get(csid, {}) if y0 <= day.year <= y1)
                 near.append((csid != sid, -n_in, d, csid))
         chem_id = sorted(near)[0][3] if near else None
+        if DCE and cr["paired_chem"] and chem_id != cr["paired_chem"]:
+            problems.append(f"{sid}: paired chemistry station {chem_id} differs from the one the DCE polygon was chosen by ({cr['paired_chem']})")
         if why is None and chem_id is None: why = "no chemistry station"
         rec = {"stationId": sid, "name": cr["name"], "chem": chem_id, "stated_km2": stated, "drawn_km2": float(cr["drawn_km2"] or 0)}
         if why is None:
@@ -196,14 +209,19 @@ def main():
 
     # ---- nesting and systems (station B is upstream of A if B's catchment outlet lies in A's catchment)
     from shapely.geometry import shape, Point
-    geo = {f["properties"]["stationId"]: shape(f["geometry"]) for f in json.load(open(D("catchments", "catchments.geojson")))["features"]}
-    outlet = {sid: Point(float(cat[sid]["outlet_x"]), float(cat[sid]["outlet_y"])) for sid in cat if cat[sid]["outlet_x"]}
+    geo = {f["properties"]["stationId"]: shape(f["geometry"]) for f in json.load(open(D(CAT, "catchments.geojson")))["features"]}
     ids = [s["stationId"] for s in stations]
-    down = {i: [j for j in ids if j != i and geo[j].covers(outlet[i])] for i in ids}
+    if DCE:
+        # CHANGELOG.md 9 Oct 2026: B is upstream of A when at least half of B's polygon lies inside A's polygon
+        inside = lambda b, a: geo[a].intersection(geo[b]).area >= 0.5 * geo[b].area
+    else:
+        outlet = {sid: Point(float(cat[sid]["outlet_x"]), float(cat[sid]["outlet_y"])) for sid in cat if cat[sid]["outlet_x"]}
+        inside = lambda b, a: geo[a].covers(outlet[b])
+    down = {i: [j for j in ids if j != i and inside(i, j)] for i in ids}
     outer = [i for i in ids if not down[i]]
     system = {}
     for i in ids:
-        cands = [o for o in outer if o == i or geo[o].covers(outlet[i])]
+        cands = [o for o in outer if o == i or inside(i, o)]
         system[i] = min(cands, key=lambda o: geo[o].area) if cands else i
     for s in stations:
         s["outermost"] = s["stationId"] in outer; s["system"] = system[s["stationId"]]
@@ -297,6 +315,11 @@ def main():
            "robustness": rob if show_shares else {}, "problems": problems}
     json.dump(rnd(res), open(os.path.join(OUT, "results.json"), "w"), indent=1, sort_keys=True)
     L = ["# Results", "", "Generated by `tools/build.py`. Do not edit by hand.", "", f"Period: {y0}–{y1}.", ""]
+    if DCE:
+        L[0] = "# Results: rerun with DCE's station catchments"
+        L[1:1] = ["", "A change made after the first result (CHANGELOG.md, 5 and 9 October 2026). Catchments: DCE – Danish Centre for "
+                  "Environment and Energy, Aarhus University. The first result, with catchments drawn from the elevation model, "
+                  "is unchanged in `results/`. Column `drawn_km2` in `stations.csv` is the DCE polygon's area here."]
     L += ["## Checks", ""] + (["All checks passed."] if not problems else [f"- {p}" for p in problems]) + [""]
     L += [f"Included stations: {len(stations)} (outermost: {sum(1 for s in stations if s['outermost'])}). Excluded: {len(excluded)}.", ""]
     for k, v in res["excluded_by_reason"].items():

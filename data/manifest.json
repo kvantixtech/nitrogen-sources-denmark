@@ -87,6 +87,53 @@
    "bytes": 284894,
    "what": "Every WFS response behind attributes.csv, with its SHA-256",
    "made_utc": "2026-10-01T20:19:39Z"
+  },
+  "dce/tot_opl_kemi_2026.cpg": {
+   "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+   "bytes": 5,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "dce/tot_opl_kemi_2026.dbf": {
+   "sha256": "90b532f993aeaa5b57f24f8d5235e9bc59d04cc0320d871f32fdb93a3b9ec8ff",
+   "bytes": 55224,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "dce/tot_opl_kemi_2026.prj": {
+   "sha256": "2bfc323fa76efbd54e39e220c4d8f16ab79728c0eab137ab43fe7fee726e60dc",
+   "bytes": 403,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "dce/tot_opl_kemi_2026.sbn": {
+   "sha256": "0534abdce593ce8d244192f51b2571b1263a39c09ce81014314e297706054bdc",
+   "bytes": 7940,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "dce/tot_opl_kemi_2026.sbx": {
+   "sha256": "a4c896bce0bd21a34d106054213d3c28ab55a4a80c17253f3ff4c0c1f70e0459",
+   "bytes": 556,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "dce/tot_opl_kemi_2026.shp": {
+   "sha256": "154d5eebda4505e5a05c9af7ad93c95085a6678031fbc5cce367e22534ab2e67",
+   "bytes": 14989216,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "dce/tot_opl_kemi_2026.shx": {
+   "sha256": "61b3f5b158d5f4197d0d6061f7088ec14fa6dbad8607cf97085dddae0f471f85",
+   "bytes": 6484,
+   "what": "DCE station catchments (tot_opl_kemi_2026), as received 5 October 2026; see CHANGELOG.md 9 October"
+  },
+  "catchments_dce/catchments.geojson": {
+   "sha256": "e98acae69df23c23cda25338274456063862b1d259f4853816c3c7afa49fd809",
+   "bytes": 3676207,
+   "what": "The DCE polygon used for each candidate, with acceptance (CHANGELOG.md 5 October)",
+   "made_utc": "2026-10-09T05:04:56Z"
+  },
+  "catchments_dce/summary.csv": {
+   "sha256": "0b6c331aeb617c84c86abdae2db8925614918278ad98f58c0a7bd59e8b941d7d",
+   "bytes": 26334,
+   "what": "Per candidate: paired chemistry station, DCE polygon, area ratio, distance, acceptance",
+   "made_utc": "2026-10-09T05:04:56Z"
   }
  }
 }

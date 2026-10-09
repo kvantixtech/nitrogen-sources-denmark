@@ -26,6 +26,10 @@ Full numbers are in [`results/summary.md`](results/summary.md), with one row per
 - The stations span farmland shares of only 41–84 %, so the background at 0 % is a long extrapolation.
 - Only 83 of 197 catchments drawn from the elevation model matched their stated area within ±10 %, and large rivers fail most often.
 
+## Rerun with DCE's station catchments
+
+DCE (Aarhus University) sent its own station catchments on 5 October 2026 and wrote that they may be used. The analysis is run again with them, with the rule fixed before the rerun ([`CHANGELOG.md`](CHANGELOG.md), 5 and 9 October). 180 of the 197 candidates get an accepted catchment, against 83 with the catchments we drew. The results will be in [`results_dce/`](results_dce/), next to the first result above, which stays unchanged.
+
 ## Data
 
 | Folder | Content |
@@ -34,11 +38,14 @@ Full numbers are in [`results/summary.md`](results/summary.md), with one row per
 | `data/flow/` | Daily discharge from the open VanDa API, with the SHA-256 of every download |
 | `data/catchments/` | Catchments drawn from Danmarks Højdemodel (Dataforsyningen) |
 | `data/landuse/` | Field blocks (Landbrugsstyrelsen), Jordbundskort 2024 and the 2024 point sources (Miljøministeriet MiljøGIS) |
+| `data/dce/` | DCE's station catchments (`tot_opl_kemi_2026`), unchanged as received on 5 October 2026. Credit: DCE – Danish Centre for Environment and Energy, Aarhus University. Not covered by the MIT licence |
+| `data/catchments_dce/`, `data/landuse_dce/` | The DCE polygon chosen for each candidate, and land use on those polygons, for the rerun |
 
 ## Check it yourself
 
     pip install numpy shapely
     python3 tools/build.py
+    KVX_CATCHMENTS=dce python3 tools/build.py      # the rerun with DCE's catchments
 
 CI reruns this on every push and fails if any result changes or a data file no longer matches its hash.
 

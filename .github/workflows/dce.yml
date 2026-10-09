@@ -1,0 +1,42 @@
+name: dce
+# The rerun with DCE's station catchments (CHANGELOG.md, 5 and 9 October 2026), in three steps:
+#   1. tools/dce_catchments.py   one DCE polygon per candidate, acceptance test     -> data/catchments_dce/
+#   2. tools/landuse.py          farmland, clay and point sources on those polygons -> data/landuse_dce/
+#   3. tools/build.py            everything in METHOD.md on them                    -> results_dce/
+# Open data, no secrets. The first result (data/catchments/, data/landuse/, results/) is not touched.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: ["tools/dce_catchments.py", ".github/workflows/dce.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: dce
+  cancel-in-progress: false
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "numpy==2.2.6" "shapely==2.1.2" "pyshp==2.3.1"
+      - name: 1. DCE catchments
+        run: python3 tools/dce_catchments.py
+      - name: 2. Land use on the DCE catchments
+        run: |
+          mkdir -p data/landuse_dce
+          set -o pipefail
+          KVX_CATCHMENTS=dce python3 tools/landuse.py 2>&1 | tee data/landuse_dce/run.log
+      - name: 3. Build
+        run: KVX_CATCHMENTS=dce python3 tools/build.py || echo "a check reported a problem; see results_dce/summary.md"
+      - if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ results_dce/ 2>/dev/null; git add data/
+          [ -d results_dce ] && git add results_dce/
+          git commit -qm "Rerun with DCE's station catchments: catchments, land use and results (dce.yml)" && git pull -q --rebase && git push -q

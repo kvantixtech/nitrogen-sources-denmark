@@ -27,3 +27,8 @@ jobs:
           print('all', len(m['files']), 'files match')"
       - name: Checks pass and results are up to date
         run: python3 tools/build.py && git diff --exit-code results/
+      - name: The DCE rerun is up to date (CHANGELOG.md, 9 October 2026)
+        run: |
+          [ -d results_dce ] || { echo "no DCE rerun yet"; exit 0; }
+          KVX_CATCHMENTS=dce python3 tools/build.py > /dev/null || echo "a check reported a problem; see results_dce/summary.md"
+          git diff --exit-code results_dce/

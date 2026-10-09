@@ -1,10 +1,9 @@
 name: landuse
 # Farmland share, clay share and point sources per accepted catchment (tools/landuse.py). Open data, no secrets.
+# Manual start only since 9 Oct 2026: tools/landuse.py also serves the DCE rerun (dce.yml), and a push must not
+# re-download the layers behind the first result by accident.
 on:
   workflow_dispatch:
-  push:
-    branches: ["main"]
-    paths: ["tools/landuse.py", ".github/workflows/landuse.yml"]
 permissions:
   contents: write
 concurrency:
