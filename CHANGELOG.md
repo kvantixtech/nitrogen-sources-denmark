@@ -150,3 +150,20 @@ The latest completed year with at least 75 % is 2021. Most stations have no publ
 **Credit:** catchments from DCE – Danish Centre for Environment and Energy, Aarhus University.
 
 DCE also pointed to ODA for alle (odaforalle.au.dk), which publishes chemistry, flow and computed transports. It is not used in this rerun. Any use of it would be a separate check, logged here first.
+
+## 2026-10-09: DCE's catchments published, and two details of the rerun (fixed before the rerun)
+
+**Publication.**
+- On 2 October we asked DCE whether the station catchments could be used and published, also in an open repository. On 5 October DCE answered: "De må gerne anvendes" ("They may be used").
+- On 5 October we asked a follow-up question: may the file be in this repository, and how should it be credited? There was no answer by 9 October.
+- We read the answer of 5 October as permission. The files are committed unchanged in `data/dce/`, with their SHA-256 in `data/manifest.json` and as listed on 5 October. If DCE objects, the files are removed from the repository, and the results stay published with DCE named as the source.
+- The catchments are DCE's. The MIT licence of this repository covers the code, not these files.
+
+**Two details the rule of 5 October did not settle.** They are decided here, before the rerun. No nitrogen value, flow value or score has been computed with DCE's catchments.
+1. **Runoff check.** The check "runoff within 100–900 mm a year" divides the water volume by the catchment area. In the rerun, the area is the area of the DCE polygon, which is the catchment actually used.
+2. **Nested stations.** For the catchments we drew, station B counts as upstream of station A when B's outlet cell lies inside A's catchment. DCE's polygons have no outlet cell, and a station point can lie a few hundred metres outside its own polygon. A point test on a shared border could also mark two neighbouring catchments as nested. In the rerun, B counts as upstream of A when at least half of B's polygon lies inside A's polygon. Shares are taken at the outermost stations, as before, and the resampling uses the river systems this gives.
+
+**How it runs.**
+- `tools/dce_catchments.py` picks one DCE polygon per candidate. The chemistry station paired with each candidate is the one in `results/stations.csv`, chosen by the rule in `METHOD.md`. The script applies the acceptance test of 5 October and writes `data/catchments_dce/`. It reads only station numbers, positions and areas.
+- `tools/landuse.py` and `tools/build.py` run unchanged on that folder when `KVX_CATCHMENTS=dce` is set, and write to `data/landuse_dce/` and `results_dce/`.
+- The workflow `dce.yml` runs the three steps. `check.yml` then recomputes `results_dce/` on every push, in the same way as `results/`.
