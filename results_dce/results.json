@@ -1,0 +1,171 @@
+{
+ "check6_at_least_30": true,
+ "excluded": 110,
+ "excluded_by_reason": {
+  "catchment not accepted (area not within \u00b110 % of stated area)": 17,
+  "catchment outside 5\u20133000 km\u00b2": 4,
+  "fewer than 4 valid years": 43,
+  "fish farm or industrial outlet in catchment": 40,
+  "runoff outside 100\u2013900 mm": 6
+ },
+ "included": 87,
+ "period": [
+  2017,
+  2018,
+  2019,
+  2020,
+  2021
+ ],
+ "primary": {
+  "A_range": [
+   0.23157,
+   0.84952
+  ],
+  "b": -0.955745,
+  "b_ci": [
+   -2.336059,
+   0.451342
+  ],
+  "background": -0.213788,
+  "background_ci": [
+   -0.51866,
+   0.100781
+  ],
+  "farmland": 1.17596,
+  "farmland_ci": [
+   0.863366,
+   1.476071
+  ],
+  "outermost": 76,
+  "point": 0.037828,
+  "point_ci": [
+   0.024458,
+   0.057949
+  ],
+  "reading": "Higher than cited",
+  "s": 8.520958,
+  "s_ci": [
+   6.244249,
+   10.827813
+  ],
+  "stations": 87
+ },
+ "problems": [],
+ "robustness": {
+  "R1": {
+   "b": -3.373922,
+   "background": -0.754702,
+   "farmland": 1.716874,
+   "outermost": 76,
+   "point": 0.037828,
+   "s": 11.440474,
+   "stations": 87
+  },
+  "R2": {
+   "b": -0.431377,
+   "background": -0.096493,
+   "farmland": 1.076621,
+   "outermost": 76,
+   "point": 0.019872,
+   "s": 7.906051,
+   "stations": 87
+  },
+  "R3": {
+   "b": -0.980813,
+   "background": -0.219395,
+   "farmland": 1.175774,
+   "kg_per_house": 1.609,
+   "outermost": 76,
+   "point": 0.043621,
+   "s": 8.506217,
+   "stations": 87
+  },
+  "R4": {
+   "b": -0.974243,
+   "background": -0.217925,
+   "farmland": 1.180097,
+   "outermost": 76,
+   "point": 0.037828,
+   "s": 8.583143,
+   "stations": 85
+  },
+  "R5": {
+   "2017": {
+    "b": -1.214595,
+    "background": -0.275327,
+    "farmland": 1.238719,
+    "outermost": 75,
+    "point": 0.036608,
+    "s": 8.621374,
+    "stations": 86
+   },
+   "2018": {
+    "b": -1.026548,
+    "background": -0.239269,
+    "farmland": 1.193809,
+    "outermost": 76,
+    "point": 0.04546,
+    "s": 8.156925,
+    "stations": 87
+   },
+   "2019": {
+    "b": -0.967346,
+    "background": -0.179293,
+    "farmland": 1.1515,
+    "outermost": 76,
+    "point": 0.027793,
+    "s": 10.377851,
+    "stations": 87
+   },
+   "2020": {
+    "b": -0.21928,
+    "background": -0.055763,
+    "farmland": 1.014457,
+    "outermost": 74,
+    "point": 0.041306,
+    "s": 6.551722,
+    "stations": 85
+   },
+   "2021": {
+    "b": -0.891023,
+    "background": -0.213172,
+    "farmland": 1.169061,
+    "outermost": 76,
+    "point": 0.044111,
+    "s": 7.968507,
+    "stations": 87
+   }
+  },
+  "R6": {
+   "note": "not run: no catchments were drawn for flow stations without a stated area (tools/catchments.py draws only stations with one)"
+  },
+  "R7": {
+   "b": 0.330498,
+   "background": 0.073928,
+   "farmland": 0.888244,
+   "outermost": 76,
+   "point": 0.037828,
+   "s": 5.736036,
+   "stations": 87
+  },
+  "R8": {
+   "b": -2.033086,
+   "b_clay": 0.614711,
+   "b_sand": -2.033086,
+   "background": -0.454775,
+   "clay_coef": 2.647797,
+   "farmland": 1.416947,
+   "outermost": 76,
+   "point": 0.037828,
+   "s": 8.039452,
+   "stations": 87
+  }
+ },
+ "rows_dropped_by_filter": {
+  "attribute >": 1,
+  "fraction": 347,
+  "quality mark": 1022,
+  "sample type": 13711
+ },
+ "stop_rule_triggered": false
+}

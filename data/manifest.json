@@ -127,13 +127,31 @@
    "sha256": "e98acae69df23c23cda25338274456063862b1d259f4853816c3c7afa49fd809",
    "bytes": 3676207,
    "what": "The DCE polygon used for each candidate, with acceptance (CHANGELOG.md 5 October)",
-   "made_utc": "2026-10-09T05:04:56Z"
+   "made_utc": "2026-10-09T05:06:42Z"
   },
   "catchments_dce/summary.csv": {
    "sha256": "0b6c331aeb617c84c86abdae2db8925614918278ad98f58c0a7bd59e8b941d7d",
    "bytes": 26334,
    "what": "Per candidate: paired chemistry station, DCE polygon, area ratio, distance, acceptance",
-   "made_utc": "2026-10-09T05:04:56Z"
+   "made_utc": "2026-10-09T05:06:42Z"
+  },
+  "landuse_dce/attributes.csv": {
+   "sha256": "cd9f899cf74511900f50088f3bab90274e0674b1c1725d2317160e173fc5592d",
+   "bytes": 35139,
+   "what": "Per accepted catchment: farmland share, clay share, point sources, exclusion flags, district",
+   "made_utc": "2026-10-09T06:53:05Z"
+  },
+  "landuse_dce/national.json": {
+   "sha256": "aee245d76cac7ac88c708325f62d1d233670387938d5f9709a9432fe266730db",
+   "bytes": 698,
+   "what": "National totals of the point layers (check 4) and the district list",
+   "made_utc": "2026-10-09T06:53:05Z"
+  },
+  "landuse_dce/downloads.csv": {
+   "sha256": "e2f7199bf1b6edc80fbc6471092a9b16fb8a52f6bcce6a9ef44ef2b1d70cd5c9",
+   "bytes": 760119,
+   "what": "Every WFS response behind attributes.csv, with its SHA-256",
+   "made_utc": "2026-10-09T06:53:05Z"
   }
  }
 }
